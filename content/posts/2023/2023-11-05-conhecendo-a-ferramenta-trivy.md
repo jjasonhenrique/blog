@@ -3,10 +3,9 @@ title: Conhecendo a ferramenta trivy
 author: Jason
 date: 2023-11-05
 tags: [ "containers" ]
-image: "/assets/images/rbac.png"
 type: post
 weight: 1
-showTableOfContents: false
+showTableOfContents: true
 ---
 
 O trivy é uma ferramenta desenvolvido pela empresa Aqua security e

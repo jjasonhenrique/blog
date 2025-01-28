@@ -8,19 +8,20 @@ author = "Jason Henrique Martins Rodrigues"
 
 [params]
   #description = "Um site onde compartilho sobre tecnologia principalmente sobre kubernetes e AWS."
-  showPostsOnHomePage = ""
-  numberPostsOnHomePage = 4
+  showPostsOnHomePage = 4
+  numberPostsOnHomePage = 8
   primaryColor = "#3498db"
   secondaryColor = "#000034"
-  enableSidebar = false
+  enableSidebar = true
   darkMode = true
   paginate = 5
-
+  togglePreviousAndNextButtons = true
+  displayReadingTime = true
+  
   socialIcons = [
     {name = "github", url = "https://github.com/jjasonhenrique"},
     {name = "linkedin", url = "https://www.linkedin.com/in/jasonhenrique/"},
   ]
-  
 
 [[menu.main]]
   name = "Home"
