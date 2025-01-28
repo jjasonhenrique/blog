@@ -3,16 +3,23 @@ languageCode = 'pt-BR'
 title = 'Jason Henrique'
 theme = 'gokarna'
 
-description = "Um site onde compartilho sobre tecnologia"
+
 author = "Jason Henrique Martins Rodrigues"
 
 [params]
-  logo = "images/logo.png"
+  #description = "Um site onde compartilho sobre tecnologia principalmente sobre kubernetes e AWS."
+  showPostsOnHomePage = ""
+  numberPostsOnHomePage = 4
   primaryColor = "#3498db"
   secondaryColor = "#000034"
   enableSidebar = false
   darkMode = true
   paginate = 5
+
+  socialIcons = [
+    {name = "github", url = "https://github.com/jjasonhenrique"},
+    {name = "linkedin", url = "https://www.linkedin.com/in/jasonhenrique/"},
+  ]
   
 
 [[menu.main]]
@@ -31,19 +38,11 @@ author = "Jason Henrique Martins Rodrigues"
   weight     = 3
 
 [[menu.main]]
-  name       = "Linkedin"
-  url        = "https://www.linkedin.com/in/jasonhenrique/"
-  weight     = 4
-
-[[menu.main]]
   name       = "Certifications"
   url        = "https://www.credly.com/users/jason-henrique/"
-  weight     = 5
+  weight     = 4
 
-[[menu.main]]
-  name       = "Github"
-  url        = "https://github.com/jjasonhenrique"
-  weight     = 6
+
 
 
 
