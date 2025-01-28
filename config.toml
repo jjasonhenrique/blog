@@ -15,11 +15,6 @@ author = "Jason Henrique Martins Rodrigues"
   paginate = 5
   
 
-
-disableReadOtherPosts = false
-
-enableSharingButtons = true
-
 [[menu.main]]
   name = "Home"
   url = "/"
