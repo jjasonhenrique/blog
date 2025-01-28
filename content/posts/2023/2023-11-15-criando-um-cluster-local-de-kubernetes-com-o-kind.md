@@ -1,8 +1,12 @@
 ---
-layout: post
-author: Jason
-categories: [ containers ]
+
 title: Criando um cluster local de kubernetes com o kind
+author: Jason
+date: 2023-11-15
+tags: [ "containers" ]
+type: post
+weight: 2
+showTableOfContents: true
 ---
 O objetivo desse artigo é fazer um passo-a-passo de como subir um
 cluster kubernetes localmente com o kind para que você possa fazer algum

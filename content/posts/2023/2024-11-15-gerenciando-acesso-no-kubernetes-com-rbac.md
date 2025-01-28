@@ -1,8 +1,11 @@
 ---
-layout: post
 title: Gerenciando acesso no Kubernetes com RBAC 
 author: Jason
-categories: [ containers ]
+date: 2024-11-15
+tags: [ "containers" ]
+type: post
+weight: 5
+showTableOfContents: true
 ---
 
 No Kubernetes, a segurança e o controle de acesso são aspectos críticos

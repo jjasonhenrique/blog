@@ -1,8 +1,11 @@
 ---
-layout: post
 title: "Kubernetes: Entenda DaemonSet, Deployment e StatefulSet"
 author: Jason
-categories: [ containers ]
+date: 2024-10-12
+tags: [ "containers" ]
+type: post
+weight: 4
+showTableOfContents: true
 ---
 
 O objetivo desse artigo é explicar e demonstrar sobre os objectos
