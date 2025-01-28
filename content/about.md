@@ -1,10 +1,4 @@
----
-layout: page
-title: About
-permalink: /about/
----
-
-{{< image src="https://avatars.githubusercontent.com/u/33292184?s=400&u=739d2586e0581bbb76e06491d1f850f6acdfb162&v=4" position="center" style="border: 16px;" >}}
+![image](https://avatars.githubusercontent.com/u/33292184?s=400&u=739d2586e0581bbb76e06491d1f850f6acdfb162&v=4)
 
 Seja bem vind@ Meu nome é Jason Henrique moro em Campinas trabalho com
 TI desde 2007 e já trabalhei com suporte à usuários, segurança da
