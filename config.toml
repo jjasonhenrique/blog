@@ -1,0 +1,46 @@
+baseURL = 'localhost'
+languageCode = 'pt-BR'
+title = 'Jason Henrique'
+theme = 'hello-friend-ng'
+
+
+[params]
+  description = "Um site onde compartilho sobre tecnologia"
+  author = "Jason Henrique Martins Rodrigues"
+
+disableReadOtherPosts = false
+
+enableSharingButtons = true
+
+[[menu.main]]
+  name       = "Posts"
+  url        = "/posts"
+  weight     = 1
+
+[[menu.main]]
+  name       = "About"
+  url        = "/about/"
+  weight     = 2
+
+[[menu.main]]
+  name       = "Linkedin"
+  url        = "https://www.linkedin.com/in/jasonhenrique/"
+  weight     = 3
+
+[[menu.main]]
+  name       = "Certifications"
+  url        = "https://www.credly.com/users/jason-henrique/"
+  weight     = 4
+
+[[menu.main]]
+  name       = "Github"
+  url        = "https://github.com/jjasonhenrique"
+  weight     = 5
+
+[taxonomies]
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
+
+
+
