@@ -7,7 +7,6 @@ type: post
 weight: 1
 showTableOfContents: true
 ---
-
 O trivy é uma ferramenta desenvolvido pela empresa Aqua security e
 tambem é um dos topicos cobrados no exame da CKS (Certified Kubernetes
 Security Specialist) para quem pretende tirar. Abaixo alguns links com

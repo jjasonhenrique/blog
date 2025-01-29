@@ -12,4 +12,4 @@ Sou formado em Tecnólogo em Redes de Computadores e pós-graduado em **DevOps**
 
 Neste blog, compartilho insights e aprendizados sobre AWS, Kubernetes, infraestrutura e práticas DevOps, visando contribuir para a comunidade e auxiliar profissionais a enfrentarem desafios técnicos do dia a dia.
 
-Se você é entusiasta de tecnologia e deseja discutir sobre infraestrutura em nuvem e outros assuntos relacionadno as práticas DevOps, sinta-se à vontade para acompanhar meus posts.
+Se você é entusiasta de tecnologia e deseja discutir sobre infraestrutura em nuvem e outros assuntos relacionados as práticas DevOps, sinta-se à vontade para acompanhar meus posts.
