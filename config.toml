@@ -1,4 +1,4 @@
-baseURL = 'https://jjasonhenrique.github.io/blog'
+baseURL = 'localhost'
 languageCode = 'pt-BR'
 title = 'Jason Henrique'
 theme = 'gokarna'
@@ -17,6 +17,7 @@ author = "Jason Henrique Martins Rodrigues"
   paginate = 5
   togglePreviousAndNextButtons = true
   displayReadingTime = true
+  publishDir = "public"
   
   socialIcons = [
     {name = "github", url = "https://github.com/jjasonhenrique"},
