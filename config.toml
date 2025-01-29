@@ -2,7 +2,7 @@ baseURL = 'https://jjasonhenrique.github.io/blog/'
 languageCode = 'pt-BR'
 title = 'Jason Henrique'
 theme = 'gokarna'
-
+canonifyURLs = true
 
 author = "Jason Henrique Martins Rodrigues"
 
