@@ -7,7 +7,7 @@ theme = 'gokarna'
 author = "Jason Henrique Martins Rodrigues"
 
 [params]
-  #description = "Um site onde compartilho sobre tecnologia principalmente sobre kubernetes e AWS."
+  description = "Um blog onde compartilho sobre tecnologia principalmente sobre kubernetes e AWS."
   showPostsOnHomePage = 4
   numberPostsOnHomePage = 8
   primaryColor = "#3498db"
@@ -22,7 +22,6 @@ author = "Jason Henrique Martins Rodrigues"
     {name = "github", url = "https://github.com/jjasonhenrique"},
     {name = "linkedin", url = "https://www.linkedin.com/in/jasonhenrique/"},
   ]
-
 
 [[menu.main]]
   name = "Home"
