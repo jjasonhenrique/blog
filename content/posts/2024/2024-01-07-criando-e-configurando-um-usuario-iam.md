@@ -14,7 +14,7 @@ programatica usando um **Access Key** e um **Secret Access Key**.
 Também será demosntrado a instalação do awscli para o gereciamento dos
 seus serviços na AWS.
 
-## Pré Requisitos {#pré-requisitos .wp-block-heading .has-x-large-font-size}
+## Pré Requisitos 
 
 Abaixo os pré requisitos para seguir esse tutorial:
 

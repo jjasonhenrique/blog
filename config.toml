@@ -23,6 +23,7 @@ author = "Jason Henrique Martins Rodrigues"
     {name = "linkedin", url = "https://www.linkedin.com/in/jasonhenrique/"},
   ]
 
+
 [[menu.main]]
   name = "Home"
   url = "/"
@@ -34,8 +35,8 @@ author = "Jason Henrique Martins Rodrigues"
   weight     = 2
 
 [[menu.main]]
-  name       = "About"
-  url        = "/about/"
+  name       = "Projects"
+  url        = "https://github.com/jjasonhenrique?tab=repositories"
   weight     = 3
 
 [[menu.main]]
