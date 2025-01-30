@@ -2,12 +2,14 @@
 title: "Minha Jornada para certificação AWS Developer"
 author: Jason
 date: 2022-09-03
-tags: [ "cloud", "AWS" ]
+tags: [ "Cloud", "AWS", "Certificações" ]
 type: post
-weight: 30
+weight: 1
 showTableOfContents: true
 ---
-Recentemente tirei a certificação AWS Certified Developer Associate
+![image-1](https://jjasonhenrique.github.io/blog/images/dca.jpg)
+
+Recentemente tirei a certificação **AWS Certified Developer Associate**
 (DCA-C01) e resolvi compartilhar sobre minha jornada de estudos e os
 materiais que usei durante esses 4 meses de preparação até conseguir a
 aprovação.
@@ -25,10 +27,7 @@ pela Pearson VUE e PSI presencialmente ou remotamente.
 
 Abaixo segue os domínios que são exigidos na prova:
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/67553-12ngzwl74v_d7jfuyki4syw.png" />
-</figure>
+![conteudo-dca](https://jjasonhenrique.github.io/blog/images/conteudo-dca.jpg)
 
 ## Minha Preparação
 
@@ -61,8 +60,11 @@ referências.
 
 O principal simulado que utilizei foi da Whizlabs que na minha opinião é
 o simulado mais parecido com a prova mas também utilizei dois outros
-simulados que comprei na Udemy. Coloquei os links na seção de
-referências.
+simulados que comprei na Udemy. Abaixo coloquei os simulados que utilizei:
+
+- [Whizlabs](https://www.whizlabs.com/learn/course/aws-developer-associate/)
+- [Simulado1](https://www.udemy.com/course/aws-developer-associate-practice-exams/)
+- [Simulado2](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/)
 
 ## Conclusão
 
@@ -72,27 +74,18 @@ preparação por ter um background de infraestrutura tive que aprender e
 me aprofundar em alguns serviços da AWS como Lambda, API Gateway e
 DynamoDB.
 
-**Referências**
+## Referências
 
--   **Documentação
-    Oficial**: [https://aws.amazon.com/pt/certification/certified-developer-associate/](https://aws.amazon.com/pt/certification/certified-developer-associate/?ch=tile&tile=getstarted){rel="noreferrer noopener"
-    target="_blank"}
--   **Exame
-    Guide:** [https://d1.awsstatic.com/pt_BR/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf](https://d1.awsstatic.com/pt_BR/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf){rel="noreferrer noopener"
-    target="_blank"}
--   **Curso
-    Udemy:** [https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/){rel="noreferrer noopener"
-    target="_blank"}
--   **Cursos AWS Skill
-    Builder:** [https://explore.skillbuilder.aws/learn/course/internal/view/elearning/42/exam-readiness-aws-certified-developer-associate-digital?da=sec&sec=prep](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/42/exam-readiness-aws-certified-developer-associate-digital?da=sec&sec=prep){rel="noreferrer noopener"
-    target="_blank"}\
-    [https://explore.skillbuilder.aws/learn/lp/1022/developer-learning-plan-portuguese](https://explore.skillbuilder.aws/learn/lp/1022/developer-learning-plan-portuguese){rel="noreferrer noopener"
-    target="_blank"}
--   **Simulados:**\
-    [https://www.whizlabs.com/learn/course/aws-developer-associate/](https://www.whizlabs.com/learn/course/aws-developer-associate/){rel="noreferrer noopener"
-    target="_blank"}\
-    [https://www.udemy.com/course/aws-developer-associate-practice-exams/](https://www.udemy.com/course/aws-developer-associate-practice-exams/){rel="noreferrer noopener"
-    target="_blank"}\
-    [https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/](https://www.udemy.com/course/aws-certified-developer-associate-practice-tests-dva-c01/){rel="noreferrer noopener"
-    target="_blank"}
+Segue abaixo algumas referências que utilizei para escrever esse post e também na minha preparação:
+
+- [Documentação
+    Oficial](https://aws.amazon.com/pt/certification/certified-developer-associate/?ch=tile&tile=getstarted)
+- [Exame
+    Guide](https://d1.awsstatic.com/pt_BR/training-and-certification/docs-dev-associate/AWS-Certified-Developer-Associate_Exam-Guide.pdf)
+- [Curso
+    Udemy](https://www.udemy.com/course/aws-certified-developer-associate-dva-c01/)
+- [Cursos AWS Skill
+    Builder](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/42/exam-readiness-aws-certified-developer-associate-digital?da=sec&sec=prep)
+- [Plano de estudo na AWS Skill
+    Builder](https://explore.skillbuilder.aws/learn/lp/1022/developer-learning-plan-portuguese)
 
