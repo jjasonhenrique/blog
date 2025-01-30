@@ -2,7 +2,7 @@
 title: Gerenciando acesso no Kubernetes com RBAC 
 author: Jason
 date: 2024-11-15
-tags: [ "kubernetes", "security", "containers" ]
+tags: [ "Kubernetes", "Security", "Containers" ]
 type: post
 weight: 30
 showTableOfContents: true
