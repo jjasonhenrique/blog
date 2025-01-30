@@ -17,20 +17,22 @@ Com essa ferramenta de linha de comando é possível criar um cluster EKS
 e também gerenciar seus node groups que não foram criados com o eksctl
 por exemplo um cluster que foi provisionado através do terraform.
 
-Lembrando que o EKS não está na oferta de free tier da AWS então caso
-prossiga com esse lab você será cobrado pelo tempo de utilização do
-cluster EKS.
+**Lembrando que o EKS não está na oferta de free tier da AWS então caso**
+**prossiga com esse lab você será cobrado pelo tempo de utilização do**
+**cluster EKS**
 
 ## Instalação 
 
 O eksctl pode ser instalado em máquinas que utilizam Windows, Linux e
 MAC ou também ser executado através do Docker.
 
-### Para Linux ou Mac:
+### Para Linux
 
 ``` bash
 curl --silent --location "https://github.com/weaveworks/eksctl/releases/latest/download/eksctl_$(uname -s)_amd64.tar.gz" | tar xz -C /tmpsudo mv /tmp/eksctl /usr/local/bin
 ```
+
+### Para MAC
 
 Também pode ser utilizado a seguinte linha de comando para usuários Mac:
 
@@ -56,35 +58,26 @@ eksctl version
 
 Ou digitando apenas eksctl deve retornar a saída abaixo:
 
-![saida-eksctl](https://jjasonhenrique.github.io/blog/images/saida-eksctl.jpg)
+![eksctl-2](https://jjasonhenrique.github.io/blog/images/eksctl-2.jpg)
 
 Para mais detalhes sobre a instalação pode consultar
-esse [Instalacao esctl](https://eksctl.io/introduction/#installation)
+
+esse [Instalação esctl](https://eksctl.io/introduction/#installation)
 
 ## Pré-Requisitos 
 
--   Usuário AWS com as permissões abaixo:
+- Usuário AWS com as permissões abaixo:
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/c95a6-1x7u19bk-khprmoaswbipva.png" />
-</figure>
+![eksctl-3](https://jjasonhenrique.github.io/blog/images/eksctl-3.jpg)
 
 Para mais informações sobre as permissões necessárias para o eksctl
-funcionar acesse
-esse [link](https://eksctl.io/usage/minimum-iam-policies/){rel="noreferrer noopener"
-target="_blank"}. Abaixo segue como ficou as minhas políticas no IAM:
+funcionar acesse esse [link](https://eksctl.io/usage/minimum-iam-policies/). Abaixo segue como ficou as minhas políticas no IAM:
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/5eba3-11gedtbu8jq8nmaoqyuudxa.png" />
-</figure>
+![eksctl-4](https://jjasonhenrique.github.io/blog/images/eksctl-4.jpg)
 
-Para instruções de como criar um usuário na AWS consulte
-este [link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html){rel="noreferrer noopener"
-target="_blank"}.
+Para instruções de como criar um usuário na AWS consulte este [link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 
--   AWS CLI instalado. Segue abaixo procedimento para a instalação:
+- AWS CLI instalado. Segue abaixo procedimento para a instalação:
 
 ```bash
 curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
@@ -95,28 +88,26 @@ sudo ./aws/install
 Dependendo da distribuição Linux será necessário instalar o unzip.
 
 Para mais informações sobre a instalação do aws cli consulte
-esse [link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html){rel="noreferrer noopener"
-target="_blank"}.
+esse [link](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
 
--   Kubectl instalado. Segue abaixo procedimento para a instalação:
+- Kubectl instalado. Segue abaixo procedimento para a instalação:
 
 ```bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"chmod +x ./kubectlmv ./kubectl /usr/local/bin/ 
 ```
 
-Para mais informações sobre a instalação do kubectl consulte
-esse [link](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/)
+Para mais informações sobre a instalação do kubectl consulte esse [link](https://kubernetes.io/docs/tasks/tools/install-kubectl-linux/).
 
 # Criando seu primeiro cluster EKS com eksctl 
 
 Após a instalação dos pré-requisitos da seção anterior você está pronto
 para a criação do seu primeiro cluster. O eksctl é uma forma mais
 simples de subir um cluster EKS em background o eksctl provisiona todos
-os recursos de infraestrutura utilizando cloudformation.
+os recursos de infraestrutura utilizando **Cloudformation**.
 
 Por padrão o eksctl sobe instâncias do tipo m5.large para economizar
 dinheiro optei pela criação do cluster utilizando o arquivo abaixo
-setando o tipo de instância para utilizar t3.medium
+setando o tipo de instância para utilizar t3.medium.
 
 ``` bash
 apiVersion: eksctl.io/v1alpha5
@@ -143,39 +134,27 @@ eksctl create cluster -f eksctl.yml
 
 Abaixo a execução do comando e a saída para criação do cluster.
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/5cbf8-1ppqyvwzveiuxdmd348vbza.png" />
-</figure>
+![eksctl-5](https://jjasonhenrique.github.io/blog/images/eksctl-5.jpg)
 
 Na saída abaixo é mostrado o provisionamento dos dois Nodegroups
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/2f2b1-1pep_g_-vxnun5vb1w8ygxq.png" />
-</figure>
+![eksctl-6](https://jjasonhenrique.github.io/blog/images/eksctl-6.jpg)
 
 Criado os dois Nodegroups com um node por nodegroup conforme imagens
 abaixo.
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/d4f42-1qp8jvut7c1h8m3f6vel-xw.png" />
-</figure>
+![eksctl-7](https://jjasonhenrique.github.io/blog/images/eksctl-7.jpg)
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/c3efa-1otqgdehpbzgiux7hkuf_ya.png" />
-</figure>
+![eksctl-8](https://jjasonhenrique.github.io/blog/images/eksctl-8.jpg)
 
 ## Criando um novo Nodegroup com eksctl 
 
 Com o eksctl você consegue também gerenciar seu cluster criado ou não
 pelo eksctl. Algumas tarefas que conseguimos executar com o eksctl:
 
--   Criação de um novo Nodegroup;
--   Criação de um Fargate Profile;
--   Update de versão do cluster;
+- Criação de um novo Nodegroup;
+- Criação de um Fargate Profile;
+- Update de versão do cluster;
 
 Para mais informações podem consultar a documentação oficial do eksctl
 que vou deixar na seção de referências.
@@ -197,22 +176,16 @@ nodeGroups:
     desiredCapacity: 1  
 ```
 
-Criar um arquivo com o nome nodegroup.yml com conteúdo acima e executar
+Criar um arquivo com o nome **nodegroup.yml** com conteúdo acima e executar
 o comando abaixo:
 
 ``` bash
 eksctl create nodegroup -f nodegroup.yml
 ```
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/1c512-1gvbxeuna0l4xdbovrmqigq.png" />
-</figure>
+![eksctl-9](https://jjasonhenrique.github.io/blog/images/eksctl-9.jpg)
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/b0984-1py94ttd00vk8cjx9kjoq6w.png" />
-</figure>
+![eksctl-10](https://jjasonhenrique.github.io/blog/images/eksctl-10.jpg)
 
 ## Deletando os Nodegroups e o cluster EKS
 
@@ -222,15 +195,11 @@ Para deletar apenas o nodegroup basta executar o comando abaixo:
 eksctl delete nodegroup -f nodegroup.yml --approve
 ```
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/8a3a7-11bamuyl9jjdmgxgbktdyba.png" />
-</figure>
+![eksctl-11](https://jjasonhenrique.github.io/blog/images/eksctl-11.jpg)
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/5d545-1yd12p9-gr1_btubjihpdrq.png" />
-</figure>
+Podemos perceber na imagem abaixo que temos apenas 2 nodes que foram criados juntamente com o cluster.
+
+![eksctl-12](https://jjasonhenrique.github.io/blog/images/eksctl-12.jpg)
 
 Agora para deletar o cluster EKS criado basta executar o comando abaixo:
 
@@ -238,22 +207,11 @@ Agora para deletar o cluster EKS criado basta executar o comando abaixo:
 eksctl delete cluster -f eksctl.yml
 ```
 
-<figure class="wp-block-image">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/b9673-1_kdg6sa4rxygqdvawxiwiq.png" />
-</figure>
+![eksctl-13](https://jjasonhenrique.github.io/blog/images/eksctl-13.jpg)
 
 ## Referências 
 
--   **Github
-    eksctl:** [https://github.com/weaveworks/eksctl](https://github.com/weaveworks/eksctl){rel="noreferrer noopener"
-    target="_blank"}
--   **Documentação
-    Oficial**: [https://eksctl.io/](https://eksctl.io/){rel="noreferrer noopener"
-    target="_blank"}
--   **Documentação Oficial
-    EKS**: [https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html){rel="noreferrer noopener"
-    target="_blank"}
--   **Exemplos de utilização do
-    eksctl:** [https://github.com/weaveworks/eksctl/tree/main/examples](https://github.com/weaveworks/eksctl/tree/main/examples){rel="noreferrer noopener"
-    target="_blank"}
+- [Github eksctl](https://github.com/weaveworks/eksctl)
+- [Documentação Oficial](https://eksctl.io/)
+- [Documentação Oficial EKS](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)
+- [Exemplos de utilização do eksctl](https://github.com/weaveworks/eksctl/tree/main/examples)
