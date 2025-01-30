@@ -7,7 +7,7 @@ type: post
 weight: 2
 showTableOfContents: true
 ---
-![eksctl](https://jjasonhenrique.github.io/blog/images/esctl.jpg)
+![eksctl](https://jjasonhenrique.github.io/blog/images/eksctl.jpg)
 
 Nesse artigo irei demostrar a utilização da ferramenta de linha de
 comando chamada eksctl feita em Golang e criada pela empresa Weaveworks
@@ -56,7 +56,7 @@ eksctl version
 
 Ou digitando apenas eksctl deve retornar a saída abaixo:
 
-![saida-eksctl](https://jjasonhenrique.github.io/blog/images/saida-esctl.jpg)
+![saida-eksctl](https://jjasonhenrique.github.io/blog/images/saida-eksctl.jpg)
 
 Para mais detalhes sobre a instalação pode consultar
 esse [Instalacao esctl](https://eksctl.io/introduction/#installation)
