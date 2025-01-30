@@ -60,9 +60,7 @@ Ou digitando apenas eksctl deve retornar a saída abaixo:
 
 ![eksctl-2](https://jjasonhenrique.github.io/blog/images/eksctl-2.jpg)
 
-Para mais detalhes sobre a instalação pode consultar
-
-esse [Instalação esctl](https://eksctl.io/introduction/#installation)
+Para mais detalhes sobre a instalação pode consultar esse [link](https://eksctl.io/introduction/#installation)
 
 ## Pré-Requisitos 
 
@@ -125,7 +123,7 @@ nodeGroups:
     desiredCapacity: 1
 ```
 
-Criar um arquivo com o nome eksctl.yml com conteúdo acima e executar o
+Criar um arquivo com o nome **eksctl.yml** com conteúdo acima e executar o
 comando abaixo:
 
 ``` bash
