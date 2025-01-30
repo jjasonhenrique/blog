@@ -29,8 +29,7 @@ artigo as seguintes ferramentas abaixo são suportadas:
 
 Através do kics você pode criar novas queries conforme a necessidade do
 seu ambiente. Mais informações
-nesse [link](https://docs.kics.io/latest/creating-queries/){rel="noreferrer noopener"
-target="_blank"}.
+nesse [link](https://docs.kics.io/latest/creating-queries/).
 
 ## Instalação 
 
@@ -45,8 +44,7 @@ docker pull checkmarx/kics:latestdocker run -t -v "{path_to_host_folder_to_scan}
 ```
 
 Para mais informações sobre a instalação pode consultar
-esse [link](https://docs.kics.io/latest/getting-started/){rel="noreferrer noopener"
-target="_blank"}.
+esse [link](https://docs.kics.io/latest/getting-started/).
 
 ## Demonstração 
 
