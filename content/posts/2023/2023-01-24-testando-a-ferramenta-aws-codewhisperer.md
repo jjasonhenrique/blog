@@ -2,7 +2,7 @@
 title: "Testando a ferramenta AWS CodeWhisperer"
 author: Jason
 date: 2023-01-24
-tags: [ "cloud", "AWS", "CodeReview", "Security" ]
+tags: [ "Cloud", "AWS", "CodeReview", "Security" ]
 type: post
 weight: 8
 showTableOfContents: true
