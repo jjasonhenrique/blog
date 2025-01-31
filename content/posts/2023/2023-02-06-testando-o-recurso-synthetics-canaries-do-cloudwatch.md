@@ -140,15 +140,15 @@ Outras opções que podem ser configuradas nessa mesma tela:
 
 Após a criação será apresentado esse dashboard conforme imagens abaixo:
 
-![synthetic-12](https://jjasonhenrique.github.io/blog/images/synthetic-12.jpg)
+![synthetic-12](https://jjasonhenrique.github.io/blog/images/synthetic-11.jpg)
 
-![synthetic-13](https://jjasonhenrique.github.io/blog/images/synthetic-13.jpg)
+![synthetic-13](https://jjasonhenrique.github.io/blog/images/synthetic-12.jpg)
 
 
 Simulei parar a execução da API para verificar se o mesmo é alertado
 conforme imagem abaixo:
 
-![synthetic-14](https://jjasonhenrique.github.io/blog/images/synthetic-14.jpg)
+![synthetic-14](https://jjasonhenrique.github.io/blog/images/synthetic-13.jpg)
 
 Também é possível criar o Synthetics Canaries através do Terraform
 conforme informado nesse
