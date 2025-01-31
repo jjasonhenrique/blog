@@ -11,8 +11,7 @@ showTableOfContents: true
 ![hardeneks](https://jjasonhenrique.github.io/blog/images/hardeneks.jpg)
 
 HardenEKS é uma ferramenta de linha de comando desenvolvido por [Doruk
-Ozturk](https://github.com/dorukozturk){rel="noreferrer noopener"
-target="_blank"} que atualmente trabalha na AWS. Essa ferramenta tem o
+Ozturk](https://github.com/dorukozturk) que atualmente trabalha na AWS. Essa ferramenta tem o
 objetivo de fazer checagens em um cluster Kubernetes baseado em um guia
 de boas práticas que foi criada pela AWS. Para consultar esse guia de
 boas práticas basta acessar
