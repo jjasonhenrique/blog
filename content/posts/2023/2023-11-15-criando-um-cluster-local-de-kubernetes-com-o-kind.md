@@ -2,11 +2,14 @@
 title: Criando um cluster local de kubernetes com o kind
 author: Jason
 date: 2023-11-15
-tags: [ "containers" ]
+tags: [ "Kubernetes", "Cloud", "Containers" ]
 type: post
-weight: 2
+weight: 15
 showTableOfContents: true
 ---
+
+![kind](https://jjasonhenrique.github.io/blog/images/kind.jpg)
+
 O objetivo desse artigo é fazer um passo-a-passo de como subir um
 cluster kubernetes localmente com o kind para que você possa fazer algum
 teste ou estudar sobre kubernetes.
@@ -20,14 +23,14 @@ distrubuição Debian rs).
 Primeiro passo é a instalação do Docker para conseguir subir o kind.
 Para efetuar a instalação do Docker devemos executar o comando abaixo:
 
-``` 
+``` bash
 curl -fsSL https://get.docker.com | sh
 ```
 
 Para verificar se o Docker foi instalado com sucesso executar o comando
 abaixo:
 
-``` 
+``` bash
 docker 
 ```
 
@@ -37,7 +40,7 @@ Devemos fazer a instalação do utilitário de linha de comando kubectl
 para conseguir administrar o cluster kubernetes via linha de comando.
 Abaixo segue os comandos que devem ser executados:
 
-``` 
+``` bash
 curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin
@@ -45,7 +48,7 @@ sudo mv ./kubectl /usr/local/bin
 
 Para validar a instalação do kubectl executar o comando abaixo:
 
-``` 
+``` bash
 kubectl
 ```
 
@@ -53,7 +56,7 @@ kubectl
 
 Para a instalação do kind devemos executar os comandos abaixo:
 
-``` 
+``` bash
 curl -Lo ./kind https://kind.sigs.k8s.io/dl/v0.20.0/kind-linux-amd64
 chmod +x ./kind
 sudo mv ./kind /usr/local/bin/
@@ -61,17 +64,17 @@ sudo mv ./kind /usr/local/bin/
 
 Para a verificação da instalação do kind executar o comando abaixo:
 
-``` 
+``` bash
 kind 
 ```
 
-## Criação cluster k8s 
+## Criação cluster kubernetes
 
 Agora vamos fazer a criação de um cluster kubernetes localmente
 executando o kind. Vou fazer a criação do cluster de forma declarativa
 usando um arquivo yaml conforme abaixo:
 
-``` 
+``` bash
 kind: Cluster
 apiVersion: kind.x-k8s.io/v1alpha4
 name: nome-do-cluster
@@ -86,21 +89,25 @@ nodes:
 Pegar o conteúdo acima criar um arquivo chamado **create_cluster.yaml**
 e executar o comando abaixo:
 
-``` 
+``` bash
 kind create cluster --config create_cluster.yaml
 ```
+
+Deve aparecer uma saída conforme abaixo:
+
+![kind-2](https://jjasonhenrique.github.io/blog/images/kind-2.jpg)
 
 Para verificar se o cluster foi criado corretamente executar os comandos
 abaixo:
 
-``` 
+```bash
 kubectl get nodes
 kubectl get pods -A
 ```
 
 Para deletar o cluster criado basta executar o comando abaixo:
 
-``` wp-block-code
+```bash
 kind delete clusters nome-do-cluster
 ```
 
@@ -113,7 +120,7 @@ feito o download do pacote da última release do helm usando esse
 
 Depois executar os comandos abaixo:
 
-``` 
+```bash 
 tar -zxvf nome-do-pacote
 sudo mv linux-amd64/helm /usr/local/bin
 ```
@@ -121,7 +128,7 @@ sudo mv linux-amd64/helm /usr/local/bin
 Para verificar se o helm foi instalado com sucesso, executar o comando
 abaixo:
 
-``` 
+```bash
 helm
 ```
 
