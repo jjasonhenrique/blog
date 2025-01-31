@@ -124,7 +124,7 @@ terminal do container com o id cf009dcc3814.
 
 ## Conclusão 
 
-O objectivo desse artigo foi fazer a instalação e a demonstração da
+O objetivo desse artigo foi fazer a instalação e a demonstração da
 ferramenta falco usando um cluster local do kubernetes.
 
 O falco também pode ser instalado em uma máquina virtual executando
