@@ -22,12 +22,6 @@ author = "Jason Henrique Martins Rodrigues"
     {name = "linkedin", url = "https://www.linkedin.com/in/jasonhenrique/"},
   ]
 
-[markup]
-  [markup.tableOfContents]
-    startLevel = 1
-    endLevel = 3
-    ordered = false
-
 [[menu.main]]
   name = "Home"
   url = "/"
