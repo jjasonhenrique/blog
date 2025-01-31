@@ -2,16 +2,19 @@
 title: "Usando o AWS App Runner para subir uma aplicação"
 author: Jason
 date: 2023-12-02
-tags: [ "cloud", "AWS" ]
+tags: [ "Cloud", "AWS", "Containers" ]
 type: post
-weight: 15
+weight: 18
 showTableOfContents: true
 ---
+
+![apprunner](https://jjasonhenrique.github.io/blog/images/apprunner.jpg)
+
 O objetivo desse artigo é demonstrar a utilização do serviço AWS App
 Runner. Vamos subir uma aplicação usando uma imagem publica do ECR para
 testar o serviço.
 
-## O que é AWS App Runner {#o-que-é-aws-app-runner .wp-block-heading .has-x-large-font-size}
+## O que é AWS App Runner 
 
 AWS App Runner é um serviço da AWS que permite você implantar gerenciar
 aplicações web e API sem a necessidade de gerenciar toda Infraestrutura
@@ -21,7 +24,7 @@ rapidamente uma aplicação.
 Para mais informações sobre esse serviço da AWS consultar esse
 [link](https://aws.amazon.com/pt/apprunner/).
 
-## Aplicação usando um ECR Público {#aplicação-usando-um-ecr-público .wp-block-heading .has-x-large-font-size}
+## Aplicação usando um ECR Público 
 
 Vamos subir essa aplicação que está localizada em um ECR público
 conforme esse
@@ -212,115 +215,9 @@ srcset="https://jjasonhenrique.me/wp-content/uploads/2023/12/screenshot-from-202
 sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="565" />
 </figure>
 
-## Conclusão {#conclusão .wp-block-heading .has-x-large-font-size}
+## Conclusão 
 
 O objetivo desse artigo foi demonstrar a utilização do AWS App Runner
 usando o metódo de Container Registry.fazendo o deploy de uma aplicação
 em um ECR público. Em um próximo artigo pretendo demonstrar a utilização
 do AWS App Runner usando uma API localizada no Github.
-
-[]{#wordads-inline-marker style="display: none;"}
-
-::: {#atatags-2054180771-679a774870f1a}
-:::
-
-:::::::: {#jp-post-flair .sharedaddy .sd-like-enabled}
-::::: {.sharedaddy .sd-sharing-enabled}
-:::: {.robots-nocontent .sd-block .sd-social .sd-social-icon .sd-sharing}
-### Compartilhe isso: {#compartilhe-isso .sd-title}
-
-::: sd-content
--   [[Clique para compartilhar no LinkedIn(abre em nova
-    janela)]{.sharing-screen-reader-text}](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/?share=linkedin "Clique para compartilhar no LinkedIn"){.share-linkedin
-    .sd-button .share-icon .no-text rel="nofollow noopener noreferrer"
-    shared="sharing-linkedin-667" target="_blank"}
--   [[Clique para compartilhar no Facebook(abre em nova
-    janela)]{.sharing-screen-reader-text}](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/?share=facebook "Clique para compartilhar no Facebook"){.share-facebook
-    .sd-button .share-icon .no-text rel="nofollow noopener noreferrer"
-    shared="sharing-facebook-667" target="_blank"}
--   [[Clique para compartilhar no Twitter(abre em nova
-    janela)]{.sharing-screen-reader-text}](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/?share=twitter "Clique para compartilhar no Twitter"){.share-twitter
-    .sd-button .share-icon .no-text rel="nofollow noopener noreferrer"
-    shared="sharing-twitter-667" target="_blank"}
--   [[Clique para compartilhar no Telegram(abre em nova
-    janela)]{.sharing-screen-reader-text}](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/?share=telegram "Clique para compartilhar no Telegram"){.share-telegram
-    .sd-button .share-icon .no-text rel="nofollow noopener noreferrer"
-    shared="" target="_blank"}
--   [[Clique para compartilhar no WhatsApp(abre em nova
-    janela)]{.sharing-screen-reader-text}](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/?share=jetpack-whatsapp "Clique para compartilhar no WhatsApp"){.share-jetpack-whatsapp
-    .sd-button .share-icon .no-text rel="nofollow noopener noreferrer"
-    shared="" target="_blank"}
--   
-:::
-::::
-:::::
-
-:::: {#like-post-wrapper-205418077-667-679a77487170c .sharedaddy .sd-block .sd-like .jetpack-likes-widget-wrapper .jetpack-likes-widget-unloaded data-src="//widgets.wp.com/likes/index.html?ver=20250129#blog_id=205418077&post_id=667&origin=jjasonhenrique.wordpress.com&obj_id=205418077-667-679a77487170c&domain=jjasonhenrique.me" data-name="like-post-frame-205418077-667-679a77487170c" data-title="Curtir ou reblogar"}
-::: {.likes-widget-placeholder .post-likes-widget-placeholder style="height: 55px;"}
-[Curtir]{.button} [Carregando...]{.loading}
-:::
-
-[]{.sd-text-color}[]{.sd-link-color}
-::::
-::::::::
-::::::::::
-
-:::::::::: wp-block-template-part
-::::::::: {.wp-block-group .is-layout-constrained .wp-block-group-is-layout-constrained}
-:::::::: {.wp-block-group .post-meta .is-layout-flex .wp-block-group-is-layout-flex}
-:::: {.is-style-post-author-icon .wp-block-post-author style="font-size:var(--wp--custom--font-sizes--x-small);"}
-::: wp-block-post-author__content
-Jason Henrique
-:::
-::::
-
-::: {.is-style-post-date-icon .wp-block-post-date style="font-size:var(--wp--custom--font-sizes--x-small);"}
-[2 de dezembro de
-2023](https://jjasonhenrique.me/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/)
-:::
-
-::: {.taxonomy-category .is-style-post-category-icon .wp-block-post-terms style="font-size:var(--wp--custom--font-sizes--x-small)"}
-[aws](https://jjasonhenrique.me/category/aws/){rel="tag"}[,
-]{.wp-block-post-terms__separator}[Cloud
-Computing](https://jjasonhenrique.me/category/cloud-computing/){rel="tag"}[,
-]{.wp-block-post-terms__separator}[containers](https://jjasonhenrique.me/category/containers/){rel="tag"}
-:::
-
-::: {.taxonomy-post_tag .is-style-post-tag-icon .wp-block-post-terms style="font-size:var(--wp--custom--font-sizes--x-small)"}
-[aws](https://jjasonhenrique.me/tag/aws/){rel="tag"}[,
-]{.wp-block-post-terms__separator}[cloud](https://jjasonhenrique.me/tag/cloud/){rel="tag"}[,
-]{.wp-block-post-terms__separator}[cloudcomputing](https://jjasonhenrique.me/tag/cloudcomputing/){rel="tag"}[,
-]{.wp-block-post-terms__separator}[containers](https://jjasonhenrique.me/tag/containers/){rel="tag"}
-:::
-::::::::
-:::::::::
-::::::::::
-
-::: {.wp-block-spacer style="height:150px" aria-hidden="true"}
-:::
-
-::::::::::::: {.wp-block-group .is-layout-constrained .wp-container-core-group-is-layout-6 .wp-block-group-is-layout-constrained style="padding-top:30px;padding-right:20px;padding-bottom:0px;padding-left:20px"}
-::::::: {.wp-block-columns .alignwide .next-prev-links .is-layout-flex .wp-container-core-columns-is-layout-1 .wp-block-columns-is-layout-flex}
-:::: {.wp-block-column .is-layout-flow .wp-block-column-is-layout-flow}
-::: {.post-navigation-link-previous .wp-block-post-navigation-link}
-[←]{.wp-block-post-navigation-link__arrow-previous .is-arrow-arrow
-aria-hidden="true"}[Testando o falco em uma
-máquina virtual](https://jjasonhenrique.me/2023/11/22/testando-o-falco-em-uma-maquina-virtual/){rel="prev"}
-:::
-::::
-
-:::: {.wp-block-column .is-layout-flow .wp-block-column-is-layout-flow}
-::: {.post-navigation-link-next .has-text-align-right .wp-block-post-navigation-link}
-[Deployando uma API usando AWS
-App Runner](https://jjasonhenrique.me/2023/12/23/deployando-uma-api-usando-aws-app-runner/){rel="next"}[→]{.wp-block-post-navigation-link__arrow-next
-.is-arrow-arrow aria-hidden="true"}
-:::
-::::
-:::::::
-
-::: {.wp-block-spacer style="height:150px" aria-hidden="true"}
-:::
-
-:::::: wp-block-comments-query-loop
-::::: {#respond .comment-respond .wp-block-post-comments-form}
-### Deixe um comentário [[Cancelar resposta](/2023/12/02/usando-o-aws-app-runner-para-subir-uma-aplicacao/#respond){#cancel-comment-reply-link rel="nofollow" style="display:none;"}]{.small} {#reply-title .comment-reply-title}
