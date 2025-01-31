@@ -2,36 +2,35 @@
 title: "Testando a ferramenta HardenEKS"
 author: Jason
 date: 2023-01-14
-tags: [ "cloud", "AWS" ]
+tags: [ "AWS", "Kubernetes", "EKS", "Containers" ]
 type: post
-weight: 24
+weight: 7
 showTableOfContents: true
 ---
+
+![hardeneks](https://jjasonhenrique.github.io/blog/images/hardeneks.jpg)
+
 HardenEKS é uma ferramenta de linha de comando desenvolvido por [Doruk
 Ozturk](https://github.com/dorukozturk){rel="noreferrer noopener"
 target="_blank"} que atualmente trabalha na AWS. Essa ferramenta tem o
 objetivo de fazer checagens em um cluster Kubernetes baseado em um guia
 de boas práticas que foi criada pela AWS. Para consultar esse guia de
 boas práticas basta acessar
-esse [link](https://aws.github.io/aws-eks-best-practices/){rel="noreferrer noopener"
-target="_blank"}.
+esse [link](https://aws.github.io/aws-eks-best-practices/).
 
 Mais informações do HardenEKS acesse
-esse [link](https://github.com/aws-samples/hardeneks){rel="noreferrer noopener"
-target="_blank"} também.
+esse [link](https://github.com/aws-samples/hardeneks) também.
 
-# Pré-Requisitos {#a5c6 .wp-block-heading .has-large-font-size}
+## Pré-Requisitos 
 
 Como pré-requisito para a execução da ferramenta é necessário já ter
 acesso a um cluster Kubernetes configurado através do arquivo kubeconfig
 para informações sobre esse arquivo consultar
-esse [link](https://kubernetes.io/pt-br/docs/concepts/configuration/organize-cluster-access-kubeconfig/){rel="noreferrer noopener"
-target="_blank"}.
+esse [link](https://kubernetes.io/pt-br/docs/concepts/configuration/organize-cluster-access-kubeconfig/).
 
 Nessa demonstração irei utilizar um cluster criado apartir do rancher
 desktop. Para mais informações acessar
-esse [link](https://rancherdesktop.io/){rel="noreferrer noopener"
-target="_blank"}.
+esse [link](https://rancherdesktop.io/).
 
 Para a execução da ferramenta em um cluster EKS é necessário que algumas
 permissões mínimas sejam atendidas. Tanto dentro da AWS (IAM Policy)
@@ -39,7 +38,7 @@ como dentro do cluster EKS (RBAC).
 
 Abaixo as permissões mínimas necessárias para a IAM Policy:
 
-``` wp-block-code
+``` bash
 {
     "Version": "2012-10-17",
     "Statement": [
@@ -79,7 +78,7 @@ Abaixo as permissões mínimas necessárias para a IAM Policy:
 
 Abaixo ClusterRole que deve ser criado no cluster:
 
-``` wp-block-code
+``` bash
 kind: ClusterRole
 apiVersion: rbac.authorization.k8s.io/v1
 metadata:
@@ -105,59 +104,45 @@ rules:
   verbs: ["list"]
 ```
 
-# Instalação {#4303 .wp-block-heading .has-large-font-size}
+## Instalação 
 
 Para a instalação da ferramenta eu vou utilizar uma máquina Windows.
 Para **Windows** será necessário a instalação do python através do link
 abaixo:
 
 [Link para download do
-Python](https://www.python.org/downloads/){rel="noreferrer noopener"
-target="_blank"}
+Python](https://www.python.org/downloads/)
 
 Para **Linux** a maioria das distribuições já possuem o python
 nativamente mas caso necessário utilizar
-esse [link](https://python.org.br/instalacao-linux/){rel="noreferrer noopener"
-target="_blank"} para fazer a instalação.
+esse [link](https://python.org.br/instalacao-linux/) para fazer a instalação.
 
 Para a instalação da ferramenta executar o seguinte comando abaixo:
 
-``` wp-block-code
+``` bash
 pip3 install hardeneks
 ```
 
 Para verificar se o pacote foi instalado com sucesso executar o comando
 abaixo:
 
-<figure class="wp-block-image aligncenter">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/a0ad3-1ef2kue3y_dn8qrftuuv4zq.png" />
-</figure>
+![hardeneks-2](https://jjasonhenrique.github.io/blog/images/hardeneks-2.jpg)
 
-# Overview {#446c .wp-block-heading .has-large-font-size}
+## Overview 
 
 Para usar a ferramenta basta executar o comando abaixo:
 
-``` wp-block-code
+``` bash
 hardeneks
 ```
 
 Abaixo alguns prints da saída da ferramenta
 
-<figure class="wp-block-image aligncenter">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/c3eb2-1wdtz1robhvt167tpa8k3ig.png" />
-</figure>
+![hardeneks-3](https://jjasonhenrique.github.io/blog/images/hardeneks-3.jpg)
 
-<figure class="wp-block-image aligncenter">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/c5d2f-1hmfaox1yz94pzirf-k9via.png" />
-</figure>
+![hardeneks-4](https://jjasonhenrique.github.io/blog/images/hardeneks-4.jpg)
 
-<figure class="wp-block-image aligncenter">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2023/01/1e3d0-1-fsnf03ciljuki_obhw0-a.png" />
-</figure>
+![hardeneks-5](https://jjasonhenrique.github.io/blog/images/hardeneks-5.jpg)
 
 No fim de cada checagem que a ferramenta faz ele informa um link para o
 guia de boas práticas.
@@ -167,7 +152,7 @@ hardeneks com isso é possível desabilitar algumas checagens da
 ferramenta. Abaixo segue um arquivo de configuração onde pode ser
 desabilitado algumas checagens:
 
-``` wp-block-code
+``` bash
 ---
 ignore-namespaces:
   - kube-node-lease
@@ -245,16 +230,16 @@ rules:
 
 Abaixo outras opções que a ferramenta possui:
 
--   Executar a checagem em um determinado namespace;
--   Executar a checagem em uma determinada região;
--   Executar a checagem em um determinado contexto ou por nome de
+- Executar a checagem em um determinado namespace;
+- Executar a checagem em uma determinada região;
+- Executar a checagem em um determinado contexto ou por nome de
     cluster;
--   Exportar esse report para formato html ou txt;
+- Exportar esse report para formato html ou txt;
 
 Uma ideia de uso seria a possibilidade de executar essa ferramenta em
 uma pipeline de CI/CD.
 
-# Conclusão {#6f0b .wp-block-heading .has-large-font-size}
+## Conclusão 
 
 A ideia desse post foi demonstrar a utilização da ferramenta hardeneks
 para efetuar uma checagens de boas práticas na utilização do kubernetes.
