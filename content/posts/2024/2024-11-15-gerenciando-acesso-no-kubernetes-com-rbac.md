@@ -8,7 +8,7 @@ weight: 30
 showTableOfContents: true
 ---
 
-![kubernetes](https://jjasonhenrique.github.io/blog/images/kubernetes.jpg)
+![kubernetes](/images/kubernetes.jpg)
 
 No Kubernetes, a segurança e o controle de acesso são aspectos críticos
 para garantir que apenas as pessoas e processos corretos tenham as
@@ -49,7 +49,7 @@ separadas para diferentes aplicações ou pods com necessidades
 específicas. Isso ajuda a isolar permissões e a seguir o princípio de
 menor privilégio.
 
--   **Exemplo de Uso**
+### Exemplo de Uso
 
 Nesse exemplo vamos criar um arquivo chamado serviceaccount.yaml com o
 conteúdo abaixo:
@@ -103,7 +103,7 @@ específico. Você pode usá-la para definir o que um usuário, um grupo ou
 uma service account pode fazer dentro daquele namespace, como criar,
 listar, ou deletar recursos.
 
--   **Exemplo de Uso**
+### Exemplo de Uso
 
 Nesse exemplo vamos criar um arquivo chamado role.yaml com o conteúdo
 abaixo:
@@ -153,7 +153,7 @@ permissões para recursos que estão fora do namespace, como nodes e
 volumes, ou mesmo para definir permissões globais em múltiplos
 namespaces.
 
--   **Exemplo de Uso**
+### Exemplo de Uso
 
 Nesse exemplo vamos criar um arquivo chamado clusterrole.yaml com o
 conteúdo abaixo:
@@ -208,7 +208,7 @@ account dentro de um namespace específico. O RoleBinding é o mecanismo
 que efetivamente concede as permissões definidas na Role para a entidade
 alvo no nosso caso a nossa serviceaccount.
 
--   **Exemplo de Uso**
+### Exemplo de Uso
 
 Nesse exemplo vamos criar um arquivo chamado rolebinding.yaml com o
 conteúdo abaixo:
@@ -260,7 +260,7 @@ Semelhante ao RoleBinding, o **ClusterRoleBinding** associa uma
 de todo o cluster. Isso significa que as permissões concedidas pela
 ClusterRole estarão disponíveis em todos os namespaces.
 
--   **Exemplo de Uso**
+### Exemplo de Uso
 
 Nesse exemplo vamos criar um arquivo chamado clusterrolebinding.yaml com
 o conteúdo abaixo:
