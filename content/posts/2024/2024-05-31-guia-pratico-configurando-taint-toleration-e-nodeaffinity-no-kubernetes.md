@@ -357,5 +357,5 @@ configuração serve para AWS usando o conceito de NodeGroup
 
 Abaixo as documentações que usei como base para escrever esse post:
 
--   [Taint e Toleration/](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
+-   [Taint e Toleration](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/)
 -   [Affinity](https://kubernetes.io/docs/concepts/scheduling-eviction/assign-pod-node/#affinity-and-anti-affinity)
