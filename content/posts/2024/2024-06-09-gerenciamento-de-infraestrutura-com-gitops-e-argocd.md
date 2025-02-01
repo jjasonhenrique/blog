@@ -99,7 +99,7 @@ kubectl port-forward service/argocd-server -n argocd 8080:443 -n argocd
 ```
 
 Através de qualquer navegador de Internet acessar o endereço
-[http://127.0.0.1:8080](http://127.0.0.1:8080){rel="nofollow"} deverá
+[http://127.0.0.1:8080](http://127.0.0.1:8080) deverá
 apresentar um erro de certificado mas pode ignorar esse erro. Deverá ser
 apresentada a tela abaixo:
 
