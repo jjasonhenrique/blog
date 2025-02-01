@@ -7,7 +7,7 @@ type: post
 weight: 3
 showTableOfContents: true
 ---
-![kics](https://jjasonhenrique.github.io/blog/images/kics.jpg)
+![kics](/images/kics.jpg)
 
 Nesse artigo irei demonstrar a utilização de um ferramenta
 chamada **kics** ou **keeping infrastructure as code secure** tem a
@@ -25,7 +25,7 @@ segurança, questões de compliance e erros de configurações em suas
 ferramentas de Infraestrutura como Código. No momento que escrevo esse
 artigo as seguintes ferramentas abaixo são suportadas:
 
-![kics-2](https://jjasonhenrique.github.io/blog/images/kics-2.jpg)
+![kics-2](/images/kics-2.jpg)
 
 Através do kics você pode criar novas queries conforme a necessidade do
 seu ambiente. Mais informações
@@ -62,24 +62,24 @@ nerdctl run -it -v "C:\Users\jhmrj\Documents\tfcourse":/tmp checkmarx/kics scan 
 máquina estou executando o containerd. No docker irá funcionar da mesma
 forma.
 
-![kics-3](https://jjasonhenrique.github.io/blog/images/kics-3.jpg)
+![kics-3](/images/kics-3.jpg)
 
 Abaixo algumas das regras identificadas pelo kics:
 
-![kics-4](https://jjasonhenrique.github.io/blog/images/kics-4.jpg)
+![kics-4](/images/kics-4.jpg)
 
-![kics-5](https://jjasonhenrique.github.io/blog/images/kics-5.jpg)
+![kics-5](/images/kics-5.jpg)
 
-![kics-6](https://jjasonhenrique.github.io/blog/images/kics-6.jpg)
+![kics-6](/images/kics-6.jpg)
 
-![kics-7](https://jjasonhenrique.github.io/blog/images/kics-7.jpg)
+![kics-7](/images/kics-7.jpg)
 
 Foi gerado um arquivo html no caminho /tmp/results/results.html. Abaixo
 segue alguns prints desse report.
 
-![kics-8](https://jjasonhenrique.github.io/blog/images/kics-8.jpg)
+![kics-8](/images/kics-8.jpg)
 
-![kics-9](https://jjasonhenrique.github.io/blog/images/kics-9.jpg)
+![kics-9](/images/kics-9.jpg)
 
 ## Integração 
 

@@ -7,7 +7,7 @@ type: post
 weight: 2
 showTableOfContents: true
 ---
-![eksctl](https://jjasonhenrique.github.io/blog/images/eksctl.jpg)
+![eksctl](/images/eksctl.jpg)
 
 Nesse artigo irei demostrar a utilização da ferramenta de linha de
 comando chamada eksctl feita em Golang e criada pela empresa Weaveworks
@@ -58,7 +58,7 @@ eksctl version
 
 Ou digitando apenas eksctl deve retornar a saída abaixo:
 
-![eksctl-2](https://jjasonhenrique.github.io/blog/images/eksctl-2.jpg)
+![eksctl-2](/images/eksctl-2.jpg)
 
 Para mais detalhes sobre a instalação pode consultar esse [link](https://eksctl.io/introduction/#installation)
 
@@ -66,12 +66,12 @@ Para mais detalhes sobre a instalação pode consultar esse [link](https://eksc
 
 - Usuário AWS com as permissões abaixo:
 
-![eksctl-3](https://jjasonhenrique.github.io/blog/images/eksctl-3.jpg)
+![eksctl-3](/images/eksctl-3.jpg)
 
 Para mais informações sobre as permissões necessárias para o eksctl
 funcionar acesse esse [link](https://eksctl.io/usage/minimum-iam-policies/). Abaixo segue como ficou as minhas políticas no IAM:
 
-![eksctl-4](https://jjasonhenrique.github.io/blog/images/eksctl-4.jpg)
+![eksctl-4](/images/eksctl-4.jpg)
 
 Para instruções de como criar um usuário na AWS consulte este [link](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html).
 
@@ -132,18 +132,18 @@ eksctl create cluster -f eksctl.yml
 
 Abaixo a execução do comando e a saída para criação do cluster.
 
-![eksctl-5](https://jjasonhenrique.github.io/blog/images/eksctl-5.jpg)
+![eksctl-5](/images/eksctl-5.jpg)
 
 Na saída abaixo é mostrado o provisionamento dos dois Nodegroups
 
-![eksctl-6](https://jjasonhenrique.github.io/blog/images/eksctl-6.jpg)
+![eksctl-6](/images/eksctl-6.jpg)
 
 Criado os dois Nodegroups com um node por nodegroup conforme imagens
 abaixo.
 
-![eksctl-7](https://jjasonhenrique.github.io/blog/images/eksctl-7.jpg)
+![eksctl-7](/images/eksctl-7.jpg)
 
-![eksctl-8](https://jjasonhenrique.github.io/blog/images/eksctl-8.jpg)
+![eksctl-8](/images/eksctl-8.jpg)
 
 ## Criando um novo Nodegroup com eksctl 
 
@@ -181,9 +181,9 @@ o comando abaixo:
 eksctl create nodegroup -f nodegroup.yml
 ```
 
-![eksctl-9](https://jjasonhenrique.github.io/blog/images/eksctl-9.jpg)
+![eksctl-9](/images/eksctl-9.jpg)
 
-![eksctl-10](https://jjasonhenrique.github.io/blog/images/eksctl-10.jpg)
+![eksctl-10](/images/eksctl-10.jpg)
 
 ## Deletando os Nodegroups e o cluster EKS
 
@@ -193,11 +193,11 @@ Para deletar apenas o nodegroup basta executar o comando abaixo:
 eksctl delete nodegroup -f nodegroup.yml --approve
 ```
 
-![eksctl-11](https://jjasonhenrique.github.io/blog/images/eksctl-11.jpg)
+![eksctl-11](/images/eksctl-11.jpg)
 
 Podemos perceber na imagem abaixo que temos apenas 2 nodes que foram criados juntamente com o cluster.
 
-![eksctl-12](https://jjasonhenrique.github.io/blog/images/eksctl-12.jpg)
+![eksctl-12](/images/eksctl-12.jpg)
 
 Agora para deletar o cluster EKS criado basta executar o comando abaixo:
 
@@ -205,7 +205,7 @@ Agora para deletar o cluster EKS criado basta executar o comando abaixo:
 eksctl delete cluster -f eksctl.yml
 ```
 
-![eksctl-13](https://jjasonhenrique.github.io/blog/images/eksctl-13.jpg)
+![eksctl-13](/images/eksctl-13.jpg)
 
 ## Referências 
 

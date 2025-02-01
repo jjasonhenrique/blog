@@ -27,7 +27,7 @@ pela Pearson VUE e PSI presencialmente ou remotamente.
 
 Abaixo segue os domínios que são exigidos na prova:
 
-![conteudo-dca](https://jjasonhenrique.github.io/blog/images/conteudo-dca.jpg)
+![conteudo-dca](/images/conteudo-dca.jpg)
 
 ## Minha Preparação
 
