@@ -33,7 +33,7 @@ Nesse primeiro passo vamos fazer a criação de um usuário IAM para usar
 nos arquivos de configurações do terraform.
 
 Para fazer a criação do usuário IAM seguir esse outro
-[artigo](posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/)
+[artigo](/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/)
 que escrevi há um tempo atrás.
 
 Para a nossa configuração vamos anexar a policy **AdmistratorAccess** no
