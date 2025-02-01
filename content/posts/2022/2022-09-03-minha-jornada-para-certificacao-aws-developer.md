@@ -7,7 +7,7 @@ type: post
 weight: 1
 showTableOfContents: true
 ---
-![image-1](https://jjasonhenrique.github.io/blog/images/dca.jpg)
+![image-1](/images/dca.jpg)
 
 Recentemente tirei a certificação **AWS Certified Developer Associate**
 (DCA-C01) e resolvi compartilhar sobre minha jornada de estudos e os
