@@ -8,7 +8,7 @@ weight: 14
 showTableOfContents: true
 ---
 
-![eks](https://jjasonhenrique.github.io/blog/images/eks.jpg)
+![eks](/images/eks.jpg)
 
 O objetivo desse post é demonstrar como fazer a configuração para que
 uma determinada role da AWS tenha permissão de somente leitura dentro de
@@ -23,7 +23,7 @@ pré requisitos abaixo:
 -   Conta na AWS.
 -   Um cluster eks já criado. Para fazer a criação de um cluster EKS
     você pode usar esse
-    [artigo](https://jjasonhenrique.github.io/blog/posts/2022/2023-09-07-usando-eksctl-para-criacao-e-gerenciamento-de-um-cluster-eks/)
+    [artigo](/posts/2022/2023-09-07-usando-eksctl-para-criacao-e-gerenciamento-de-um-cluster-eks/)
     que falei sobre o eksctl.
 -   Kubectl instalado. Mais informações nesse
     [link](https://kubernetes.io/pt-br/docs/tasks/tools/install-kubectl-linux/).
@@ -258,12 +258,12 @@ kubectl create secret generic teste --from-literal=user=jason
 
 Deve ser apresentado o seguinte erro conforme imagem abaixo:
 
-![eks-2](https://jjasonhenrique.github.io/blog/images/eks-2.jpg)
+![eks-2](/images/eks-2.jpg)
 
 Depois tentamos listar todos os pods executando no cluster e obtivemos
 sucesso conforme imagem abaixo:
 
-![eks-3](https://jjasonhenrique.github.io/blog/images/eks-3.jpg)
+![eks-3](/images/eks-3.jpg)
 
 Com isso garantimos que o acesso está somente leitura aos objectos do
 Kubernetes.

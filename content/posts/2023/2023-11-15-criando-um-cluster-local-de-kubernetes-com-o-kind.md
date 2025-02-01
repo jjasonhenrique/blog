@@ -8,7 +8,7 @@ weight: 15
 showTableOfContents: true
 ---
 
-![kind](https://jjasonhenrique.github.io/blog/images/kind.jpg)
+![kind](/images/kind.jpg)
 
 O objetivo desse artigo é fazer um passo-a-passo de como subir um
 cluster kubernetes localmente com o kind para que você possa fazer algum
@@ -95,7 +95,7 @@ kind create cluster --config create_cluster.yaml
 
 Deve aparecer uma saída conforme abaixo:
 
-![kind-2](https://jjasonhenrique.github.io/blog/images/kind-2.jpg)
+![kind-2](/images/kind-2.jpg)
 
 Para verificar se o cluster foi criado corretamente executar os comandos
 abaixo:

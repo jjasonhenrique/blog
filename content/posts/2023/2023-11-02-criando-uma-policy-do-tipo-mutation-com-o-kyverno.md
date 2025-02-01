@@ -8,13 +8,13 @@ weight: 12
 showTableOfContents: true
 ---
 
-![kyverno](https://jjasonhenrique.github.io/blog/images/kyverno.jpg)
+![kyverno](/images/kyverno.jpg)
 
 O objectivo dese artigo e a criação de um policy do tipo Mutation no
 kyverno. Esse artigo é uma continuação do primeiro artigo onde falei
 como instalar o kyverno e criei uma policy do tipo validation no
 kyverno. Para ver o primeiro artigo basta clicar nesse
-[link](https://jjasonhenrique.github.io/blog/posts/2023/2023-10-29-conhecendo-um-pouco-sobre-o-kyverno/).
+[link](/posts/2023/2023-10-29-conhecendo-um-pouco-sobre-o-kyverno/).
 
 ## Pré Requisitos 
 

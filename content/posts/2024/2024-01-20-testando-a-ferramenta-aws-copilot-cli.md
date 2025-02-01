@@ -8,7 +8,7 @@ weight: 22
 showTableOfContents: true
 ---
 
-![copilot](https://jjasonhenrique.github.io/blog/images/copilot.jpg)
+![copilot](/images/copilot.jpg)
 
 Nesse artigo vou demonstar a utilização da ferramenta AWS Copilot CLI
 para a criação de uma forma simplificada uma aplicação conteinerizada
@@ -41,7 +41,7 @@ sudo curl -Lo /usr/local/bin/copilot https://github.com/aws/copilot-cli/releases
 
 Deve ser apresentado uma tela similar a abaixo:
 
-![copilot-2](https://jjasonhenrique.github.io/blog/images/copilot-2.jpg)
+![copilot-2](/images/copilot-2.jpg)
 
 No meu caso eu utilizei um computador executando linux. Para outros
 sistemas operacionais consultar esse
@@ -52,7 +52,7 @@ sistemas operacionais consultar esse
 Como pré requisito para utilização do AWS Copilot CLI é necessário a
 configuração de usuário IAM no seu computador. Para fazer essa
 configuração pode seguir esse
-[artigo](https://jjasonhenrique.github.io/blog/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/).
+[artigo](/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/).
 
 \
 Para esse teste vou usar a policy **AdministratorAccess**. Caso utilize
@@ -86,7 +86,7 @@ git clone https://github.com/aws-samples/amazon-ecs-cli-sample-app.git example
 Depois vamos acessar a pasta example e vamos executar o comando
 **copilot init** será apresentado a tela abaixo:
 
-![copilot-3](https://jjasonhenrique.github.io/blog/images/copilot-3.jpg)
+![copilot-3](/images/copilot-3.jpg)
 
 Você deve inserir o nome da aplicação. No meu caso será teste-app-blog.
 
@@ -94,52 +94,52 @@ Na próxima tela será solicitado a escolha do tipo de workload da sua
 aplicação. Para essa demonstração iremos utilizar a opção **Load
 Balanced Web Service** mas existem outras opções conforme abaixo:
 
-![copilot-4](https://jjasonhenrique.github.io/blog/images/copilot-4.jpg)
+![copilot-4](/images/copilot-4.jpg)
 
 Agora você deve escolher um nome para seu serviço. No meu caso será
 teste-app-blog-svc conforme abaixo:
 
-![copilot-5](https://jjasonhenrique.github.io/blog/images/copilot-5.jpg)
+![copilot-5](/images/copilot-5.jpg)
 
 Agora será solicitado a localização do arquivo Dockerfile ou a
 localização de uma imagem da aplicação. Vamos utilizar o arquivo
 Dockerfile que está na raiz do repositório.
 
-![copilot-6](https://jjasonhenrique.github.io/blog/images/copilot-6.jpg)
+![copilot-6](/images/copilot-6.jpg)
 
 Nesse próximo passo será criado todas as roles de infraestrutura
 necessárias para o funcionamento da nossa aplicação. Após essa criação
 será perguntado se você gostaria de fazer deploy da sua aplicação
 conforme imagem abaixo:
 
-![copilot-7](https://jjasonhenrique.github.io/blog/images/copilot-7.jpg)
+![copilot-7](/images/copilot-7.jpg)
 
 Na próxima tela será solicitado a criação de um environment. Esse
 environment terá o nome de dev conforme imagem abaixo:
 
-![copilot-8](https://jjasonhenrique.github.io/blog/images/copilot-8.jpg)
+![copilot-8](/images/copilot-8.jpg)
 
 Na próxima tela será criado toda a parte de infraestrutura como por
 exemplo repositório do ECR, um bucket S3, toda parte de network e o seu
 cluster ECS.
 
-![copilot-9](https://jjasonhenrique.github.io/blog/images/copilot-9.jpg)
+![copilot-9](/images/copilot-9.jpg)
 
 Na próxima tela o AWS copilot CLI irá fazer o build da imagem da nossa
 aplicação e fazer o push para o repositório ECR criado anteriormente
 conforme abaixo:
 
-![copilot-10](https://jjasonhenrique.github.io/blog/images/copilot-10.jpg)
+![copilot-10](/images/copilot-10.jpg)
 
 Na próxima tela a aplicação será configurada dentro do cluster ECS, será
 feito o deploy e será disponibilizado a URL da nossa aplicação conforme
 image abaixo:
 
-![copilot-11](https://jjasonhenrique.github.io/blog/images/copilot-11.jpg)
+![copilot-11](/images/copilot-11.jpg)
 
 Acessando a URL da aplicação deve retornar uma página similar a abaixo:
 
-![copilot-12](https://jjasonhenrique.github.io/blog/images/copilot-12.jpg)
+![copilot-12](/images/copilot-12.jpg)
 
 ## Interagindo com AWS Copilot CLI 
 
@@ -151,19 +151,19 @@ alguns exemplos:
 copilot svc status
 ```
 
-![copilot-13](https://jjasonhenrique.github.io/blog/images/copilot-13.jpg)
+![copilot-13](/images/copilot-13.jpg)
 
 ``` bash
 copilot svc ls
 ```
 
-![copilot-14](https://jjasonhenrique.github.io/blog/images/copilot-14.jpg)
+![copilot-14](/images/copilot-14.jpg)
 
 ``` bash
 copilot app show
 ```
 
-![copilot-15](https://jjasonhenrique.github.io/blog/images/copilot-15.jpg)
+![copilot-15](/images/copilot-15.jpg)
 
 Existem muitas outras opções que você pode utilizar com o AWS copilot
 CLI.
@@ -180,7 +180,7 @@ Será solicitado uma confirmação e depois será feito processo de exclusão
 de todos os recursos criados pelo AWS copilot CLI conforme imagem
 abaixo:
 
-![copilot-16](https://jjasonhenrique.github.io/blog/images/copilot-16.jpg)
+![copilot-16](/images/copilot-16.jpg)
 
 ## Conclusão 
 

@@ -8,7 +8,7 @@ weight: 8
 showTableOfContents: true
 ---
 
-![codewhisperer](https://jjasonhenrique.github.io/blog/images/codewhisperer.jpg)
+![codewhisperer](/images/codewhisperer.jpg)
 
 O objetivo desse post é demonstrar a utilização do serviço AWS
 CodeWhisperer que é uma ferramenta que sugere códigos para um
@@ -46,14 +46,14 @@ pré-requisitos:
     [link](https://code.visualstudio.com/download).
 -   Instalar a extensão AWS Toolkit no VS Code conforme imagem abaixo:
 
-![codewhisperer-2](https://jjasonhenrique.github.io/blog/images/codewhisperer-2.jpg)
+![codewhisperer-2](/images/codewhisperer-2.jpg)
 
 ## Instalação e Configuração 
 
 Apos a instalação da extensão da AWS Toolkit irá aparecer um ícone da
 aws no lado esquerdo similar a imagem abaixo:
 
-![codewhisperer-3](https://jjasonhenrique.github.io/blog/images/codewhisperer-3.jpg)
+![codewhisperer-3](/images/codewhisperer-3.jpg)
 
 Para ativar a utilização do serviço AWS CodeWhisperer será necessário
 configurar a conexão com a AWS.
@@ -62,7 +62,7 @@ Eu utilizei a opção **"Use a personal email to sign up and sign in with
 AWS Builder ID "** assim que clicar nessa opção você será redirecionada
 para uma página web para efetuar a criação do seu AWS Builder ID.
 
-![codewhisperer-4](https://jjasonhenrique.github.io/blog/images/codewhisperer-4.jpg)
+![codewhisperer-4](/images/codewhisperer-4.jpg)
 
 ## Demonstração 
 
@@ -71,11 +71,11 @@ um comentário sobre o que gostaria de criar por exemplo "Create simple
 API with fastAPI" com isso ele vai dando sugestões de código conforme
 imagem abaixo:
 
-![codewhisperer-5](https://jjasonhenrique.github.io/blog/images/codewhisperer-5.jpg)
+![codewhisperer-5](/images/codewhisperer-5.jpg)
 
 Esse foi o resultado final apresentado pelo AWS CodeWhisperer
 
-![codewhisperer-6](https://jjasonhenrique.github.io/blog/images/codewhisperer-6.jpg)
+![codewhisperer-6](/images/codewhisperer-6.jpg)
 
 ## Conclusão 
 

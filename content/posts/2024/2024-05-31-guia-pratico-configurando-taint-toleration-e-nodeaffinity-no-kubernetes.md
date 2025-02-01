@@ -8,7 +8,7 @@ weight: 25
 showTableOfContents: true
 ---
 
-![kubernetes](https://jjasonhenrique.github.io/blog/images/kubernetes.jpg)
+![kubernetes](/images/kubernetes.jpg)
 
 O objetivo desse post é demonstrar como configurar que os pods da sua
 aplicação executem em um determinado nó usando o kind. Essa configuração
@@ -22,7 +22,7 @@ seguintes pré requisitos abaixo:
 
 -   Ter o kubectl instalado.
 -   Ter um cluster local usando o kind para isso pode seguir esse
-    [post](https://jjasonhenrique.github.io/blog/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/).
+    [post](/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/).
 
 ## Conceitos 
 
@@ -181,7 +181,7 @@ kubectl get pods -n app -o wide
 
 Deverá apresentar uma saída conforme imagem abaixo:
 
-![taint-2](https://jjasonhenrique.github.io/blog/images/taint-2.jpg)
+![taint-2](/images/taint-2.jpg)
 
 Podemos perceber que os pods foram distribuidos entre os nós
 **cluster-jason-worker** e **cluster-jason-worker2**.
@@ -206,7 +206,7 @@ kubectl describe node cluster-jason-worker
 
 E procurar pelo campo **Taints** conforme imagem abaixo:
 
-![taint-3](https://jjasonhenrique.github.io/blog/images/taint-3.jpg)
+![taint-3](/images/taint-3.jpg)
 
 Agora vamos fazer uma alteração no nosso deploy adicionando o bloco do
 tolerations conforme arquivo abaixo:
@@ -256,7 +256,7 @@ kubectl get deploy nginx -o yaml -n app
 Agora vamos visualizar novamente a distribuição dos pods conforme
 abaixo:
 
-![taint-4](https://jjasonhenrique.github.io/blog/images/taint-4.jpg)
+![taint-4](/images/taint-4.jpg)
 
 Podemos perceber que ainda há pods nos dois nós (cluster-jason-worker e
 cluster-jason-worker2). Com isso se faz necessário a utilização do
@@ -316,7 +316,7 @@ spec:
 Vamos fazer o replace dos pods novamente e verificar que os pods estão
 apenas no nó **cluster-jason-worker** conforme imagem abaixo:
 
-![taint-5](https://jjasonhenrique.github.io/blog/images/taint-5.jpg)
+![taint-5](/images/taint-5.jpg)
 
 Outro teste que podemos fazer para validar se a configuração está
 correta e escalar o número de pods para 20 e verificar se os pods se
@@ -329,7 +329,7 @@ kubectl scale deploy/nginx -n app --replicas 20
 Podemos verificar que foram criados mais 5 pods no mesmo nó conforme
 imagem abaixo:
 
-![taint-6](https://jjasonhenrique.github.io/blog/images/taint-6.jpg)
+![taint-6](/images/taint-6.jpg)
 
 ## Deletar cluster local 
 

@@ -8,7 +8,7 @@ weight: 24
 showTableOfContents: true
 ---
 
-![soa](https://jjasonhenrique.github.io/blog/images/soa.jpg)
+![soa](/images/soa.jpg)
 
 No último dia 2 de Maio fui aprovado na certificação AWS Certified
 SysOps Administrator Associate (SOA-C02) e com isso resolvi compartilhar

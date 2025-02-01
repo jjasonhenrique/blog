@@ -8,7 +8,7 @@ weight: 20
 showTableOfContents: true
 ---
 
-![saa](https://jjasonhenrique.github.io/blog/images/saa.jpg)
+![saa](/images/saa.jpg)
 
 No último dia 13 de dezembro de 2023 fui aprovado na certificação AWS Certified
 Solutions Architect Associate (SAA-C03) e com isso resolvi compartilhar

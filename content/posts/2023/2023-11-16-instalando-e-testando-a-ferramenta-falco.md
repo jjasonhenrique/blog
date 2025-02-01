@@ -8,7 +8,7 @@ weight: 16
 showTableOfContents: true
 ---
 
-![falco](https://jjasonhenrique.github.io/blog/images/falco.jpg)
+![falco](/images/falco.jpg)
 
 O falco é uma ferramenta desenvolvida pela empresa sysdig e tem a função
 de detectar ameaças em near real time na cloud, em workloads executando
@@ -37,7 +37,7 @@ seguintes pré requitios:
 -   Cluster kubernetes local pode ser criado através do kind. Mais
     informações nesse
     [link](https://kind.sigs.k8s.io/docs/user/quick-start/). Também criei esse
-    [artigo](https://jjasonhenrique.github.io/blog/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/)
+    [artigo](/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/)
     para ajudar no processo de criação de um cluster local.
 -   Helm instalado. Mais informações nesse
     [link](https://helm.sh/docs/intro/install/).
@@ -75,7 +75,7 @@ kubectl get pods -n falco
 
 Deverá apresentar uma saída conforme a imagem abaixo:
 
-![falco-2](https://jjasonhenrique.github.io/blog/images/falco-2.jpg)
+![falco-2](/images/falco-2.jpg)
 
 Será criado um daemonset do falco com isso será executado um pod em cada
 node do seu cluster no meu caso há 3 pods do falco. Para verificar
@@ -94,7 +94,7 @@ kubectl logs -f daemonset/falco -n falco
 
 Deverá aparecer uma saída similar a abaixo:
 
-![falco-3](https://jjasonhenrique.github.io/blog/images/falco-3.jpg)
+![falco-3](/images/falco-3.jpg)
 
 ## Demonstração 
 

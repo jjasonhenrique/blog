@@ -8,7 +8,7 @@ weight: 9
 showTableOfContents: true
 ---
 
-![synthetic](https://jjasonhenrique.github.io/blog/images/synthetic.jpg)
+![synthetic](/images/synthetic.jpg)
 
 O objetivo desse post é demonstrar a criação de um synthetic canary na
 AWS. É um recurso que está dentro do serviços oferecidos dentro do
@@ -31,7 +31,7 @@ criar uma API usando FastAPI pode consultar esse
 Para a instalação do FastAPI utilizarei uma EC2 com as seguintes
 configurações abaixo:
 
-![synthetic-2](https://jjasonhenrique.github.io/blog/images/synthetic-2.jpg)
+![synthetic-2](/images/synthetic-2.jpg)
 
 **Lembrando que essa EC2 deve possuir um IP Publico.**
 
@@ -55,7 +55,7 @@ pip show fastapi
 
 Deverá retornar algo conforme imagem abaixo:
 
-![synthetic-3](https://jjasonhenrique.github.io/blog/images/synthetic-3.jpg)
+![synthetic-3](/images/synthetic-3.jpg)
 
 Após a instalação do FastAPI devemos criar o arquivo **main.py**
 conforme abaixo:
@@ -81,12 +81,12 @@ uvicorn main:app --host 0.0.0.0 --port 8080
 No meu caso estou usando a porta 8080. Será necessário a liberação dessa
 no security group da EC2 conforme imagem abaixo:
 
-![synthetic-4](https://jjasonhenrique.github.io/blog/images/synthetic-4.jpg)
+![synthetic-4](/images/synthetic-4.jpg)
 
 Utilizando o dns público ou ip público da sua EC2 na porta 8080 devemos
 ter um resultado similar conforme imagem abaixo:
 
-![synthetic-5](https://jjasonhenrique.github.io/blog/images/synthetic-5.jpg)
+![synthetic-5](/images/synthetic-5.jpg)
 
 ## Configuração Synthetics Canaries
 
@@ -97,34 +97,34 @@ Para iniciar a configuração você deve ir na opção **Application
 Monitoring** \>\> **Synthetics Canaries** no serviço do **Cloudwatch**
 conforme imagem abaixo:
 
-![synthetic-6](https://jjasonhenrique.github.io/blog/images/synthetic-6.jpg)
+![synthetic-6](/images/synthetic-6.jpg)
 
 Será mostrado uma tela conforme abaixo:
 
-![synthetic-7](https://jjasonhenrique.github.io/blog/images/synthetic-7.jpg)
+![synthetic-7](/images/synthetic-7.jpg)
 
 Para efetuar a criação basta clicar na opção **Create Canary** e será
 apresentado a tela abaixo:
 
-![synthetic-8](https://jjasonhenrique.github.io/blog/images/synthetic-8.jpg)
+![synthetic-8](/images/synthetic-8.jpg)
 
 Nesta primeira seção temos a opção de usar padrões já criados pela AWS,
 usar nossos próprios scripts e importar de um bucket S3. No meu caso vou
 usar a primeira opção.
 
-![synthetic-9](https://jjasonhenrique.github.io/blog/images/synthetic-9.jpg)
+![synthetic-9](/images/synthetic-9.jpg)
 
 Nesta segunda seção você irá definir o nome do Canary e o endpoint URL
 que será checado.
 
-![synthetic-10](https://jjasonhenrique.github.io/blog/images/synthetic-10.jpg)
+![synthetic-10](/images/synthetic-10.jpg)
 
 Nesta terceira seção será escolhido o runtime que será executado. No meu
 caso eu optei pelo runtime que utiliza o python3.8 + selenium + chromium
 mas existem outras opções. Também é possível configurar variáveis de
 ambiente para a execução do script.
 
-![synthetic-11](https://jjasonhenrique.github.io/blog/images/synthetic-11.jpg)
+![synthetic-11](/images/synthetic-11.jpg)
 
 Nesta quarta seção você irá configurar de quanto em quanto tempo será
 executado a checagem do endpoint URL.
@@ -140,15 +140,15 @@ Outras opções que podem ser configuradas nessa mesma tela:
 
 Após a criação será apresentado esse dashboard conforme imagens abaixo:
 
-![synthetic-12](https://jjasonhenrique.github.io/blog/images/synthetic-12.jpg)
+![synthetic-12](/images/synthetic-12.jpg)
 
-![synthetic-13](https://jjasonhenrique.github.io/blog/images/synthetic-13.jpg)
+![synthetic-13](/images/synthetic-13.jpg)
 
 
 Simulei parar a execução da API para verificar se o mesmo é alertado
 conforme imagem abaixo:
 
-![synthetic-14](https://jjasonhenrique.github.io/blog/images/synthetic-14.jpg)
+![synthetic-14](/images/synthetic-14.jpg)
 
 Também é possível criar o Synthetics Canaries através do Terraform
 conforme informado nesse

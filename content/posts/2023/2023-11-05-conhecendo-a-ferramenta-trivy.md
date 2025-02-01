@@ -8,7 +8,7 @@ weight: 13
 showTableOfContents: true
 ---
 
-![trivy](https://jjasonhenrique.github.io/blog/images/trivy.jpg)
+![trivy](/images/trivy.jpg)
 
 O trivy é uma ferramenta desenvolvido pela empresa Aqua security e
 tambem é um dos topicos cobrados no exame da CKS (Certified Kubernetes
@@ -84,7 +84,7 @@ Onde **nginx** é o nome da imagem de container
 
 Deverá aparecer uma saída similar abaixo:
 
-![trivy-2](https://jjasonhenrique.github.io/blog/images/trivy-2.jpg)
+![trivy-2](/images/trivy-2.jpg)
 
 Você pode filtar por severidade HIGH e CRITICAL usando o comando abaixo:
 
@@ -95,7 +95,7 @@ trivy image nginx --severity=HIGH --severity=CRITICAL
 Agora deverá aparecer somente as vulnerabilidades com a severidade HIGH
 e CRITICAL conforme imagem abaixo:
 
-![trivy-3](https://jjasonhenrique.github.io/blog/images/trivy-3.jpg)
+![trivy-3](/images/trivy-3.jpg)
 
 Na coluna **status** podemos verificar que o status esta como
 **affected** isso quer dizer que não existe uma solução para essas
@@ -113,7 +113,7 @@ trivy repository https://github.com/prometheus/prometheus --severity=HIGH
 
 Abaixo segue a saída do comando:
 
-![trivy-4](https://jjasonhenrique.github.io/blog/images/trivy-4.jpg)
+![trivy-4](/images/trivy-4.jpg)
 
 Nesse caso a coluna **status** esta com o status **fixed** isso quer
 dizer que já existe uma solução para a vulnerabilidade. Na coluna

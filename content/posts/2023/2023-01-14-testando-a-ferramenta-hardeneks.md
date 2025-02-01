@@ -8,7 +8,7 @@ weight: 7
 showTableOfContents: true
 ---
 
-![hardeneks](https://jjasonhenrique.github.io/blog/images/hardeneks.jpg)
+![hardeneks](/images/hardeneks.jpg)
 
 HardenEKS é uma ferramenta de linha de comando desenvolvido por [Doruk
 Ozturk](https://github.com/dorukozturk) que atualmente trabalha na AWS. Essa ferramenta tem o
@@ -125,7 +125,7 @@ pip3 install hardeneks
 Para verificar se o pacote foi instalado com sucesso executar o comando
 abaixo:
 
-![hardeneks-2](https://jjasonhenrique.github.io/blog/images/hardeneks-2.jpg)
+![hardeneks-2](/images/hardeneks-2.jpg)
 
 ## Overview 
 
@@ -137,11 +137,11 @@ hardeneks
 
 Abaixo alguns prints da saída da ferramenta
 
-![hardeneks-3](https://jjasonhenrique.github.io/blog/images/hardeneks-3.jpg)
+![hardeneks-3](/images/hardeneks-3.jpg)
 
-![hardeneks-4](https://jjasonhenrique.github.io/blog/images/hardeneks-4.jpg)
+![hardeneks-4](/images/hardeneks-4.jpg)
 
-![hardeneks-5](https://jjasonhenrique.github.io/blog/images/hardeneks-5.jpg)
+![hardeneks-5](/images/hardeneks-5.jpg)
 
 No fim de cada checagem que a ferramenta faz ele informa um link para o
 guia de boas práticas.

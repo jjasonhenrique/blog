@@ -8,7 +8,7 @@ weight: 18
 showTableOfContents: true
 ---
 
-![apprunner](https://jjasonhenrique.github.io/blog/images/apprunner.jpg)
+![apprunner](/images/apprunner.jpg)
 
 O objetivo desse artigo é demonstrar a utilização do serviço AWS App
 Runner. Vamos subir uma aplicação usando uma imagem publica do ECR para
@@ -34,30 +34,30 @@ Você deve acessar sua conta da AWS procurar pelo serviço **AWS App
 Runner** e clicar na opção **Create an App Runner Service** será
 apresentado a tela abaixo:
 
-![apprunner-2](https://jjasonhenrique.github.io/blog/images/apprunner-2.jpg)
+![apprunner-2](/images/apprunner-2.jpg)
 
 Podemos usar o AWS App Runner executando através de um Container
 Registry sendo o ECR o único suportado. Você tem a opção de usar um ECR
 público ou um ECR privado. Abaixo seguem as configurações utilizadas
 para subir uma aplicação usando um ECR público:
 
-![apprunner-3](https://jjasonhenrique.github.io/blog/images/apprunner-3.jpg)
+![apprunner-3](/images/apprunner-3.jpg)
 
 Na próxima tela vamos configurar o nome do serviço, a quantidade de CPU
 e memória que será utilizada, a porta e também pode ser configurado
 alguma variavel de ambiente.
 
-![apprunner-4](https://jjasonhenrique.github.io/blog/images/apprunner-4.jpg)
+![apprunner-4](/images/apprunner-4.jpg)
 
 Na próxima tela vamos configurar o Auto scaling da nossa aplicação por
 ser apenas um teste vamos subir com as definições Default porém você
 pode criar as suas próprias definições clicando botão create
 
-![apprunner-5](https://jjasonhenrique.github.io/blog/images/apprunner-5.jpg)
+![apprunner-5](/images/apprunner-5.jpg)
 
 Na próxima fazer fazer as configurações de Health Check conforme abaixo:
 
-![apprunner-6](https://jjasonhenrique.github.io/blog/images/apprunner-6.jpg)
+![apprunner-6](/images/apprunner-6.jpg)
 
 Também podemos fazer a configurações de security, networking,
 observability e tags. Na próxima tela será feito um review das
@@ -67,20 +67,20 @@ configurações da sua aplicação e depois você deve clicar no botão
 Na próxima tela podemos acompanhar o progresso do Deploy conforme
 abaixo:
 
-![apprunner-7](https://jjasonhenrique.github.io/blog/images/apprunner-7.jpg)
+![apprunner-7](/images/apprunner-7.jpg)
 
 Você também verificar os logs da aplicação conforme imagem abaixo:
 
-![apprunner-8](https://jjasonhenrique.github.io/blog/images/apprunner-8.jpg)
+![apprunner-8](/images/apprunner-8.jpg)
 
 Para testar a aplicação basta clicar no endereço que será gerado em
 Default Domain conforme imagem abaixo:
 
-![apprunner-9](https://jjasonhenrique.github.io/blog/images/apprunner-9.jpg)
+![apprunner-9](/images/apprunner-9.jpg)
 
 Deve aparecer uma imagem conforme abaixo:
 
-![apprunner-10](https://jjasonhenrique.github.io/blog/images/apprunner-10.jpg)
+![apprunner-10](/images/apprunner-10.jpg)
 
 ## Conclusão 
 

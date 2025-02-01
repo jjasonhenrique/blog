@@ -8,14 +8,14 @@ weight: 17
 showTableOfContents: true
 ---
 
-![falco](https://jjasonhenrique.github.io/blog/images/falco.jpg)
+![falco](/images/falco.jpg)
 
 O objetivo deste segundo artigo falando sobre a ferramenta falco é
 demonstrar a utilização do falco instalando em uma máquina virtual na
 AWS e fazer uma alteração no output de uma regra do falco.
 
 Para ler meu primeiro artigo sobre o falco basta acessar esse
-[link](https://jjasonhenrique.github.io/blog/posts/2023/2023-11-16-instalando-e-testando-a-ferramenta-falco/).
+[link](/posts/2023/2023-11-16-instalando-e-testando-a-ferramenta-falco/).
 Nesse artigo eu instalei o falco no Kubernetes.
 
 ## Pré Requisitos 
@@ -66,7 +66,7 @@ apt-get install -y falco
 
 Deve ser escolhido a opção eBPF conforme abaixo:
 
-![falco-4](https://jjasonhenrique.github.io/blog/images/falco-4.jpg)
+![falco-4](/images/falco-4.jpg)
 
 Para verificar se o falco foi instalado com sucesso deve ser executado o
 comando abaixo:
@@ -77,7 +77,7 @@ systemctl status falco-bpf
 
 Deve apresentar uma saída conforme tela abaixo:
 
-![falco-5](https://jjasonhenrique.github.io/blog/images/falco-5.jpg)
+![falco-5](/images/falco-5.jpg)
 
 ## Demonstração 
 
@@ -96,7 +96,7 @@ grep Sensitive /var/log/syslog
 
 Deve apresentar a seguinte saída:
 
-![falco-6](https://jjasonhenrique.github.io/blog/images/falco-6.jpg)
+![falco-6](/images/falco-6.jpg)
 
 ## Alteração regra do Falco 
 
@@ -109,11 +109,11 @@ Primeiramente vamos copiar o conteudo abaixo da linha 396 ate 431 para o
 arquivo /etc/falco_rule.local.yaml. É uma boa prática colocar as regras
 customizadas nesse arquivo.
 
-![falco-7](https://jjasonhenrique.github.io/blog/images/falco-7.jpg)
+![falco-7](/images/falco-7.jpg)
 
 A seção output deve ser alterada conforme abaixo:
 
-![falco-8](https://jjasonhenrique.github.io/blog/images/falco-8.jpg)
+![falco-8](/images/falco-8.jpg)
 
 Depois devemos salavar o arquivo **/etc/falco_rule.local.yaml**, parar e
 iniciar o serviço do falco usando os comandos abaixo:
@@ -138,7 +138,7 @@ grep ACESSO /var/log/syslog
 
 Por fim deve apresentar uma saída conforme abaixo:
 
-![falco-9](https://jjasonhenrique.github.io/blog/images/falco-9.jpg)
+![falco-9](/images/falco-9.jpg)
 </figure>
 
 ## Conclusão 

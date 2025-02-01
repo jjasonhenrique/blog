@@ -8,14 +8,14 @@ weight: 23
 showTableOfContents: true
 ---
 
-![iam](https://jjasonhenrique.github.io/blog/images/iam.jpg)
+![iam](/images/iam.jpg)
 
 O objetivo desse artigo é criar um tutorial demonstrando como criar e
 configurar uma role IAM na AWS para que você possa interagir de forma
 programatica com a console de administração da AWS. Usando uma role IAM
 é uma forma mais segura do que usando um usuário IAM conforme demonstrei
 nesse
-[post](https://jjasonhenrique.github.io/blog/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/).
+[post](/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/).
 
 ## Pré Requisitos 
 
@@ -32,7 +32,7 @@ Como primeiro passo você deve acessar sua conta AWS e acessar o serviço
 **IAM** e ir na opção **Users** e depois clicar na opção **Create User**
 será apresentado a seguinte tela abaixo:
 
-![iam-14](https://jjasonhenrique.github.io/blog/images/iam-14.jpg)
+![iam-14](/images/iam-14.jpg)
 
 Não deve ser habiltado a opção **Provide user access to the AWS
 Management Console** pois será habilitado acesso a console de
@@ -48,7 +48,7 @@ Depois disso clicar na opção **Create User** e seu usuário será criado.
 
 Para como gerar o **Access Key** e o **Secret Access Key** e como
 configurar você pode consultar esse outro
-[post](https://jjasonhenrique.github.io/blog/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/)
+[post](/posts/2024/2024-01-07-criando-e-configurando-um-usuario-iam/)
 que escrevi.
 
 ## Criando uma Role IAM
@@ -68,7 +68,7 @@ AWS ir no serviço **IAM** e depois em **Políticas** e então clicar no
 botão **Criar política**. Apos clicar no botão **Criar política** será
 apresentado a tela abaixo:
 
-![iam-15](https://jjasonhenrique.github.io/blog/images/iam-15.jpg)
+![iam-15](/images/iam-15.jpg)
 
 Do lado direito da tela acima clicar na opção JSON e substituir o
 conteúdo conforme abaixo:
@@ -116,19 +116,19 @@ Agora vamos criar duas roles uma para cada política criada. Para isso
 você deve ir no serviço **IAM** e depois na opção **Funções** e então
 clicar no botão **Criar perfil**. Deverá aparecer a tela abaixo:
 
-![iam-16](https://jjasonhenrique.github.io/blog/images/iam-16.jpg)
+![iam-16](/images/iam-16.jpg)
 
 Você deve selecionar a opção **Conta da AWS** e clicar em Próximo. Após
 isso selecionar a policy **s3-list** criada anteriormente e clicar em
 Próximo. Será apresentado a tela abaixo:
 
-![iam-17](https://jjasonhenrique.github.io/blog/images/iam-17.jpg)
+![iam-17](/images/iam-17.jpg)
 
 Deve ser inserido o nome do perfil como **s3** e clicar no botão **Criar
 perfil**. Agora vamos precisar editar o conteúdo da política de
 confiança do perfil criado na tela abaixo:
 
-![iam-18](https://jjasonhenrique.github.io/blog/images/iam-18.jpg)
+![iam-18](/images/iam-18.jpg)
 
 Agora vamos substituir o conteúdo da política de confiança conforme
 abaixo:
@@ -181,7 +181,7 @@ s3 e uma instância ec2. Primeiramente vamos verificar se o usuário
 criado tem alguma permissão no meu caso o nome do usuário IAM criado se
 chama blog.
 
-![iam-19](https://jjasonhenrique.github.io/blog/images/iam-19.jpg)
+![iam-19](/images/iam-19.jpg)
 
 Deve ser apresentado os erros acima para o usuário blog. Agora vamos
 testar a role s3 usando o comando abaixo:
@@ -192,7 +192,7 @@ aws s3 ls --profile s3
 
 Deve ser apresentado a tela abaixo listando um bucket s3:
 
-![iam-20](https://jjasonhenrique.github.io/blog/images/iam-20.jpg)
+![iam-20](/images/iam-20.jpg)
 
 Agora vamos para o segundo teste onde vamos parar uma instância ec2
 usando a role ec2. Para isso vamos executar o comando abaixo:
@@ -204,7 +204,7 @@ aws ec2 stop-instances --region sa-east-1 --instance-ids  i-0085922c8e050b223 --
 Executando esse comando acima aparecerá uma tela de mudança de estado da
 instância ec2 de running para stopping conforme imagem abaixo:
 
-![iam-21](https://jjasonhenrique.github.io/blog/images/iam-21.jpg)
+![iam-21](/images/iam-21.jpg)
 
 Assim que a instância parar você pode executar o comando abaixo para
 inicializar a mesma instância ec2.

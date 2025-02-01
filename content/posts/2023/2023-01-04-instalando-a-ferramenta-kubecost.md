@@ -8,7 +8,7 @@ weight: 4
 showTableOfContents: true
 ---
 
-![kubecost](https://jjasonhenrique.github.io/blog/images/kubecost.jpg)
+![kubecost](/images/kubecost.jpg)
 
 O intuito deste post é demostrar a instalação do kubecost uma ferramenta
 de monitoramento e gerenciamento de custos para um ambiente kubernetes e
@@ -56,11 +56,11 @@ kubectl apply -f https://raw.githubusercontent.com/kubecost/cost-analyzer-helm-c
 
 Será deployado os seguintes objetos conforme imagem abaixo:
 
-![kubecost-2](https://jjasonhenrique.github.io/blog/images/kubecost-2.jpg)
+![kubecost-2](/images/kubecost-2.jpg)
 
 Abaixo overview dos objetos deployados pelo kubecost
 
-![kubecost-3](https://jjasonhenrique.github.io/blog/images/kubecost-3.jpg)
+![kubecost-3](/images/kubecost-3.jpg)
 
 Na instalação default é efetuado a instalação de um deploy do
 prometheus-server que será responsável por coletar as informações do
@@ -78,9 +78,9 @@ port-forward para testar localmente. Segue abaixo comando:
 
 Abaixo alguns prints da console do kubecost
 
-![kubecost-4](https://jjasonhenrique.github.io/blog/images/kubecost-4.jpg)
+![kubecost-4](/images/kubecost-4.jpg)
 
-![kubecost-5](https://jjasonhenrique.github.io/blog/images/kubecost-5.jpg)
+![kubecost-5](/images/kubecost-5.jpg)
 
 ## Conclusão 
 
