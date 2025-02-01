@@ -2,11 +2,13 @@
 title: Como usar a expressão for_each para criar subnets na aws com terraform
 author: Jason
 date: 2024-08-18
-tags: [ "iac" ]
+tags: [ "IaC", "Cloud", "AWS" ]
 type: post
-weight: 3
+weight: 28
 showTableOfContents: true
 ---
+
+![terraform](/images/terraform.jpg)
 
 O Objetivo desse artigo é demonstrar a utilizacão da expressão for_each
 com o intuito de reduzir a quantidade de código para a criacão de sua
@@ -122,37 +124,11 @@ terraform apply plano
 
 Deve aparecer uma imagem conforme abaixo:
 
-<figure class="wp-block-image size-large">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png?w=765"
-class="wp-image-1146" data-attachment-id="1146"
-data-permalink="https://jjasonhenrique.me/2024/08/18/como-usar-a-expressao-for_each-para-criar-subnets-na-aws-com-terraform/image-56/"
-data-orig-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png"
-data-orig-size="765,210" data-comments-opened="1"
-data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-data-image-title="image" data-image-description="" data-image-caption=""
-data-medium-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png?w=300"
-data-large-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png?w=765"
-srcset="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png 765w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png?w=150 150w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-12.png?w=300 300w"
-sizes="(max-width: 765px) 100vw, 765px" width="765" height="210" />
-</figure>
+![terraform-11](/images/terraform-11.jpg)
 
 Você também pode validar na console da AWS conforme imagem abaixo:
 
-<figure class="wp-block-image size-large">
-<img
-src="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=1024"
-class="wp-image-1148" data-attachment-id="1148"
-data-permalink="https://jjasonhenrique.me/2024/08/18/como-usar-a-expressao-for_each-para-criar-subnets-na-aws-com-terraform/image-57/"
-data-orig-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png"
-data-orig-size="1666,196" data-comments-opened="1"
-data-image-meta="{&quot;aperture&quot;:&quot;0&quot;,&quot;credit&quot;:&quot;&quot;,&quot;camera&quot;:&quot;&quot;,&quot;caption&quot;:&quot;&quot;,&quot;created_timestamp&quot;:&quot;0&quot;,&quot;copyright&quot;:&quot;&quot;,&quot;focal_length&quot;:&quot;0&quot;,&quot;iso&quot;:&quot;0&quot;,&quot;shutter_speed&quot;:&quot;0&quot;,&quot;title&quot;:&quot;&quot;,&quot;orientation&quot;:&quot;0&quot;}"
-data-image-title="image" data-image-description="" data-image-caption=""
-data-medium-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=300"
-data-large-file="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=1024"
-srcset="https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=1024 1024w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=150 150w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=300 300w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png?w=768 768w, https://jjasonhenrique.me/wp-content/uploads/2024/08/image-13.png 1666w"
-sizes="(max-width: 1024px) 100vw, 1024px" width="1024" height="120" />
-</figure>
+![terraform-12](/images/terraform-12.jpg)
 
 ## Vantagens de usar o for_each 
 
