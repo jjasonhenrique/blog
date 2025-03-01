@@ -4,7 +4,7 @@ author: Jason
 date: 2025-03-03
 tags: [ "Cloud", "AWS", "Security" ]
 type: post
-weight: 31
+weight: 30
 showTableOfContents: true
 ---
 No Kubernetes, os Services desempenham um papel fundamental ao permitir a comunicação entre os componentes dentro de um cluster, bem como entre o cluster e o mundo externo. Eles funcionam como um ponto de acesso estável para aplicativos que estão em constante mudança, garantindo que você possa se comunicar com pods, mesmo quando eles são criados ou destruídos.
