@@ -1,7 +1,7 @@
 ---
 title: "Um Guia Completo sobre o services no kubernetes"
 author: Jason
-date: 2025-05-03
+date: 2025-06-03
 tags: [ "Cloud", "AWS", "Security" ]
 type: post
 weight: 30
