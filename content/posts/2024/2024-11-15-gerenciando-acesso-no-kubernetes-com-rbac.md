@@ -8,7 +8,7 @@ weight: 30
 showTableOfContents: true
 ---
 
-![kubernetes](/blog/images/kubernetes.jpg)
+![kubernetes](/images/kubernetes.jpg)
 
 No Kubernetes, a segurança e o controle de acesso são aspectos críticos
 para garantir que apenas as pessoas e processos corretos tenham as
