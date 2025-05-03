@@ -1,4 +1,4 @@
-baseURL = 'https://jjasonhenrique.github.io/blog'
+baseURL = 'https://jjasonhenrique.github.io'
 languageCode = 'pt-BR'
 title = 'Jason Henrique'
 theme = 'gokarna'
