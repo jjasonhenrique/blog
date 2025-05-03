@@ -17,7 +17,7 @@ Neste post, vamos explorar o que são os Services no Kubernetes, seus tipos prin
 
 Para demonstrar a utlizacao dos **services** do kubernetes serao necessarios os seguintes pre requisitos
 
-- Kind instalado. Mais informacoes nesse [link](https://jjasonhenrique.github.io/blog/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/)
+- Kind instalado. Mais informacoes sobre como instalar o kind nesse [link](https://jjasonhenrique.github.io/blog/posts/2023/2023-11-15-criando-um-cluster-local-de-kubernetes-com-o-kind/)
 - E sera necessario ter um deploy de uma aplicacao para os testes. Vamos usar o deploy abaixo:
 ```yaml
 apiVersion: apps/v1
@@ -41,7 +41,13 @@ spec:
         ports:
         - containerPort: 80
 ```
-Para entender sobre um deploy no kubernetes voce pode ler esse [artigo](https://jjasonhenrique.github.io/blog/posts/2024/2024-10-12-kubernetes-entenda-daemonset-deployment-e-statefulset/)
+Deve ser criado um arquivo chamado **deploy.yaml** com o conteudo acima. Para fazer a apply do arquivo deploy.yaml executar o comando abaixo:
+
+``` bash
+kubectl apply -f deploy.yaml
+```
+
+Para entender sobre um deploy no kubernetes voce pode ler esse [artigo](https://jjasonhenrique.github.io/blog/posts/2024/2024-10-12-kubernetes-entenda-daemonset-deployment-e-statefulset/).
 
 ## O que é um Service no Kubernetes?
 
