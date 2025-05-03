@@ -8,7 +8,7 @@ weight: 30
 showTableOfContents: true
 ---
 
-![kubernetes](https://jjasonhenrique.github.io/blog/images/kubernetes.jpg)
+![kubernetes](/blog/images/kubernetes.jpg)
 
 No Kubernetes, a segurança e o controle de acesso são aspectos críticos
 para garantir que apenas as pessoas e processos corretos tenham as
