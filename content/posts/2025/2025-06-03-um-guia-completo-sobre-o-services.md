@@ -23,7 +23,9 @@ Para demonstrar a utlizacao dos **services** do kubernetes serao necessarios os 
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx  namespace: app  labels:
+  name: nginx  
+  namespace: app  
+  labels:
     app: nginx
 spec:
   replicas: 10
@@ -49,6 +51,14 @@ kubectl apply -f deploy.yaml
 
 Para entender sobre um deploy no kubernetes voce pode ler esse [artigo](https://jjasonhenrique.github.io/blog/posts/2024/2024-10-12-kubernetes-entenda-daemonset-deployment-e-statefulset/).
 
+Para verificar se o deploy esta funcionando corretamente voce pode usar o comando abaixo:
+
+``` bash
+kubectl port-forward po/nome-do-pod 8080:80 --address 0.0.0.0 -n app
+```
+
+E acessar pelo navegador o endereco 127.0.0.1:8080 e para careegar a pagina de Welcome do nginx.
+
 ## O que é um Service no Kubernetes?
 
 Um **Service** no Kubernetes é um recurso que expõe um conjunto de pods como um serviço de rede, garantindo um ponto de entrada estável para acessar os pods. Isso é crucial porque os pods no Kubernetes são efêmeros, podendo ser recriados a qualquer momento com novos endereços IP.
@@ -71,14 +81,14 @@ O tipo `ClusterIP` é usado para expor o Service apenas dentro do cluster. Ele c
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-clusterip-service
+  name: nginx
 spec:
   selector:
-    app: my-app
+    app: nginx
   ports:
     - protocol: TCP
-      port: 80
-      targetPort: 8080
+      port: 8080
+      targetPort: 80
   type: ClusterIP
 ```
 
