@@ -1,13 +1,13 @@
 ---
 title: "Um Guia Completo sobre o services no kubernetes"
 author: Jason
-date: 2025-06-03
+date: 2029-06-03
 tags: [ "Cloud", "AWS", "Security" ]
 type: post
 weight: 31
 showTableOfContents: true
 ---
-![kubernetes](https://jjasonhenrique.github.io/blog/images/kubernetes.jpg)
+![kubernetes](/images/kubernetes.jpg)
 
 No Kubernetes, os **Services** desempenham um papel fundamental ao permitir a comunicação entre os componentes dentro de um cluster, bem como entre o cluster e o mundo externo. Eles funcionam como um ponto de acesso estável para aplicativos que estão em constante mudança, garantindo que você possa se comunicar com pods, mesmo quando eles são criados ou destruídos.
 
