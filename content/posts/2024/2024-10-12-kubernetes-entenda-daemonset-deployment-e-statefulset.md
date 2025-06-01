@@ -139,7 +139,9 @@ o conteúdo abaixo:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx  namespace: app  labels:
+  name: nginx  
+  namespace: app  
+  labels:
     app: nginx
 spec:
   replicas: 10
