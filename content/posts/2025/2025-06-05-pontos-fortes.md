@@ -1,7 +1,7 @@
 ---
 title: "Descobrindo meus pontos fortes e como eles me ajudam minha carreira em Tecnologia"
 author: Jason
-date: 2025-06-07
+date: 2025-06-05
 tags: ["DevOps", "Carreira", "Gallup", "Autoconhecimento"]
 type: post
 weight: 31
