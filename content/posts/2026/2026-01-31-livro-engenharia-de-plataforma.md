@@ -10,7 +10,7 @@ showTableOfContents: true
 
 ![eng-plataforma](/images/eng-plataforma.jpg)
 
-Recentemente li o engenharia de plataforma conforme esse [link](https://www.amazon.com.br/Engenharia-Plataforma-l%C3%ADderes-t%C3%A9cnicos-produtos/dp/8575229419)
+Recentemente li o engenharia de plataforma conforme esse [link](https://www.amazon.com.br/Engenharia-Plataforma-l%C3%ADderes-t%C3%A9cnicos-produtos/dp/8575229419) e resolvi escrever uma resenha sobre o livro.
 
 Se você trabalha com tecnologia há alguns anos, provavelmente já sentiu isso: times cada vez mais rápidos, sistemas cada vez mais complexos e uma sensação constante de que estamos gastando mais energia fazendo o básico funcionar do que criando valor de verdade.
 
