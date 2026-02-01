@@ -8,16 +8,17 @@ weight: 31
 showTableOfContents: true
 ---
 
+![eng-plataforma](/images/eng-plataforma.jpg)
 
-# Engenharia de Plataforma: por que esse livro deveria estar na estante de todo líder técnico
+Recentemente li o engenharia de plataforma conforme esse [link](https://www.amazon.com.br/Engenharia-Plataforma-l%C3%ADderes-t%C3%A9cnicos-produtos/dp/8575229419)
 
 Se você trabalha com tecnologia há alguns anos, provavelmente já sentiu isso: times cada vez mais rápidos, sistemas cada vez mais complexos e uma sensação constante de que estamos gastando mais energia fazendo o básico funcionar do que criando valor de verdade.
 
 É exatamente nesse cenário que o livro **Engenharia de Plataforma: um guia para líderes técnicos, de produtos e de pessoas** se encaixa.
 
-Mais do que falar de ferramentas, o livro propõe uma **mudança de mentalidade**: tratar a plataforma interna como um produto, com usuários claros (desenvolvedores), objetivos bem definidos e evolução contínua. Ao longo de 14 capítulos, os autores conectam tecnologia, organização e liderança de uma forma muito prática.
+Mais do que falar de ferramentas, o livro propõe uma **mudança de mentalidade**: tratar a plataforma interna como um produto, com usuários claros (desenvolvedores), objetivos bem definidos e evolução contínua. Os autores conectam tecnologia, organização e liderança de uma forma muito prática.
 
-Abaixo, compartilho um panorama do livro capítulo a capítulo, com os principais aprendizados.
+Abaixo, compartilho um panorama com os principais aprendizados.
 
 ---
 
@@ -99,7 +100,9 @@ Usar essa ferramenta evita um erro comum em iniciativas de plataforma: **constru
 
 ## As 5 vitórias e os 2 desafios da engenharia de plataforma
 
-O livro também apresenta um modelo muito didático ao falar das **5 vitórias** que uma boa plataforma entrega, ao mesmo tempo em que reconhece **2 grandes desafios** inevitáveis.
+O livro também apresenta um modelo muito didático ao falar das **5 vitórias** que uma boa plataforma entrega, ao mesmo tempo em que reconhece **2 grandes desafios** inevitáveis.O modelo das 5 vitórias e 2 desafios não é uma checklist técnica. Ele é um framework de comunicação e alinhamento.
+
+A ideia central é simples: A engenharia de plataforma só se sustenta se gera valor visível para múltiplos públicos, ao mesmo tempo em que reconhece tensões inevitáveis. Abaixo segue um exemplo desse framework:
 
 ### As 5 vitórias
 
@@ -181,6 +184,6 @@ O fechamento olha para o futuro da engenharia de plataforma e reforça que ela *
 
 ## Conclusão
 
-**Engenharia de Plataforma** não é um livro sobre ferramentas específicas — e isso é um elogio. Ele é sobre como criar bases sólidas para que times consigam entregar melhor, com menos fricção e mais autonomia.
+**Engenharia de Plataforma** não é um livro sobre ferramentas específicas. Ele é sobre como criar bases sólidas para que times consigam entregar melhor, com menos fricção e mais autonomia.
 
 Se você é líder técnico ou atua com **DevOps, SRE, arquitetura ou produto**, esse livro ajuda a dar nome a problemas que muita gente já sente no dia a dia — e aponta caminhos práticos, realistas e sustentáveis para resolvê-los.
